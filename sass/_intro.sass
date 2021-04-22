@@ -7,27 +7,21 @@
         padding-left: 43px
         display: flex
         align-items: center
+        justify-content: space-between
         margin-bottom: 194px
         .header__img
             width: 59px
             height: 59px
             background-color: #FFFFFF
+            color: #000
             box-shadow: 0px 8px 35px rgba(0, 0, 0, 0.13)
             border-radius: 15px
-            position: relative
             text-align: center
-            display: inline-block
-            margin-right: 100px
-            .logo
-                text-transform: uppercase
-                font-family: $Squada
-                font-size: 20px
-                width: 36px
-                margin: 0 auto
-                position: relative
-                display: block
-                top: 50%
-                transform: translateY(-50%)
+            text-transform: uppercase
+            font-family: $Squada
+            font-size: 20px
+            text-decoration: none
+            line-height: 59px
         .header__list
             display: flex
             justify-content: space-between
@@ -35,34 +29,31 @@
             li
                 display: inline-block
                 list-style-type: none
-                margin-right: 40px
+                &:not(:last-child)
+                    margin-right: 40px
                 a
                     font-family: $R500
                     color: #fff
                     font-size: 15px
                     text-decoration: none
-                &:last-child
-                    margin-right: 95px
+                
         .time
-            margin-right: 100px
             font-family: $R400
             color: #fff
             font-size: 13px
-        a
+        .phone
             font-family: $R900
             font-size: 16px
             color: #fff
             text-decoration: none
+            
     .intro__content
-        width: 680px
-        margin: 0 auto
-        padding-left: 43px
+        text-align: center
         h1
             color: #fff
             line-height: 47px
             margin-bottom: 32px
-            padding-left: 15px
-            text-align: left
+            
         a
             font-family: $R900
             font-size: 17px
@@ -73,5 +64,6 @@
             padding: 17px 35px
             display: block
             width: 184px
-            margin-left: 208px
+            margin: 0 auto
+            
     
