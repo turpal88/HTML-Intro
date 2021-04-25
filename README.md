@@ -1,3 +1,3 @@
 # WayUp-Lessons
 - [Основы HTML]
-- [БЭМ]
+- [БЭМ]("https://github.com/turpal88/WayUp-Lessons/tree/bem")
