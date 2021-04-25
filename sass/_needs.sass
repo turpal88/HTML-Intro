@@ -1,0 +1,44 @@
+.needs
+    padding-bottom: 131px
+    &-wrapper
+        display: flex
+        justify-content: space-between
+    &-item
+        width: 273px
+        height: 348px
+        box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1)
+        padding: 0 30px
+        background-color: #fff
+        position: relative
+        &:not(:last-child)
+            margin-right: 16px
+        &-wrapper
+            width: 213px
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%, -60%)
+            &__num
+                display: block
+                width: 40px
+                height: 40px
+                margin: 0 auto 15px auto
+                border-radius: 100%
+                text-align: center
+                line-height: 40px
+                font-family: $OS700
+                font-size: 15px
+                color: #fff
+                &_one
+                    background-color: $need-one
+                &_two
+                    background-color: $need-two
+                &_three
+                    background-color: $need-three
+                &_four
+                    background-color: $need-four
+            &__descr
+                font-family: $OS400
+                font-size: 15px
+                color: #000
+                text-align: center
