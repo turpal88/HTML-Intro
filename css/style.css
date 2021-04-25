@@ -68,11 +68,21 @@ body, h1, h2, h3, h4, p, ul {
   align-items: flex-start;
 }
 
+.wrapper_needs {
+  width: 213px;
+  flex-wrap: wrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+}
+
 .title {
   font-family: "Open Sans Extra Bold", sans-serif;
   font-size: 35px;
   color: #000;
   text-transform: uppercase;
+  line-height: 50px;
 }
 
 .title_goals {
@@ -80,12 +90,12 @@ body, h1, h2, h3, h4, p, ul {
 }
 
 .title_needs {
-  margin-bottom: 72px;
+  margin-bottom: 70px;
 }
 
 .header {
   background-color: #1326CE;
-  padding-top: 77px;
+  padding-top: 81px;
   padding-bottom: 173px;
 }
 
@@ -116,7 +126,8 @@ body, h1, h2, h3, h4, p, ul {
   font-size: 80px;
   color: #fff;
   text-transform: uppercase;
-  margin-bottom: 49px;
+  line-height: 104px;
+  margin-bottom: 52px;
 }
 
 .header-images {
@@ -132,7 +143,7 @@ body, h1, h2, h3, h4, p, ul {
 }
 
 .header__article {
-  padding: 26px 37px 29px 26px;
+  padding: 25px 37px 29px 27px;
   background-color: #0E20BF;
   border-radius: 10px;
   max-width: 510px;
@@ -142,14 +153,13 @@ body, h1, h2, h3, h4, p, ul {
   font-family: "Open Sans Bold", sans-serif;
   font-size: 18px;
   color: #fff;
-  margin-bottom: 8px;
+  margin-bottom: 7px;
 }
 
 .header__descr {
   font-family: "Open Sans Regular", sans-serif;
   font-size: 15px;
   color: #fff;
-  line-height: 132.9%;
 }
 
 .goals {
@@ -159,14 +169,14 @@ body, h1, h2, h3, h4, p, ul {
 
 .table {
   border-collapse: collapse;
-  margin-bottom: 128px;
+  margin-bottom: 131px;
 }
 
 .table td {
   text-align: center;
   border: 1px solid #000;
   width: 286px;
-  height: 54px;
+  height: 53px;
   color: #000;
 }
 
@@ -175,6 +185,7 @@ body, h1, h2, h3, h4, p, ul {
   font-size: 16px;
   color: #000;
   background-color: #E8E8E8;
+  text-transform: uppercase;
 }
 
 .table__htm, .table__css, .table__js {
@@ -188,12 +199,15 @@ body, h1, h2, h3, h4, p, ul {
 }
 
 .needs__item {
+  width: 273px;
   height: 348px;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0 30px;
+  background-color: #fff;
+  position: relative;
 }
 
 .needs__item:not(:last-child) {
@@ -204,7 +218,7 @@ body, h1, h2, h3, h4, p, ul {
   display: block;
   width: 40px;
   height: 40px;
-  margin: 0 auto 16px auto;
+  margin: 0 auto 15px auto;
   border-radius: 100%;
   text-align: center;
   line-height: 40px;
