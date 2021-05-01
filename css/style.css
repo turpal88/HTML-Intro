@@ -41,8 +41,11 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
   font-size: 30px;
   color: #2D3049;
   letter-spacing: 0.05em;
-  margin-bottom: 89px;
   text-transform: uppercase;
+}
+
+.title_routes, .title_beginning {
+  margin-bottom: 89px;
 }
 
 .descr {
@@ -50,8 +53,11 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
   font-size: 13px;
   color: #2D3049;
   letter-spacing: 0.05em;
-  margin-bottom: 38px;
   line-height: 1.7em;
+}
+
+.descr_routes {
+  margin-bottom: 38px;
 }
 
 .intro {
@@ -60,15 +66,11 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
   text-align: center;
 }
 
-.logo {
-  background: url(../img/logo.svg);
-  width: 75px;
-  height: 73px;
-  display: block;
-  margin: 0 auto 195px;
+.intro-offer {
+  margin-bottom: 239px;
 }
 
-.offer__title {
+.intro-offer__title {
   font-family: "Open Sans Extra Bold";
   font-size: 60px;
   color: #fff;
@@ -77,7 +79,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
   margin-bottom: 10px;
 }
 
-.offer__descr {
+.intro-offer__descr {
   font-family: "Open Sans Regular";
   font-size: 20px;
   color: #fff;
@@ -85,10 +87,10 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
   margin-bottom: 34px;
 }
 
-.offer__btn {
+.intro-offer__btn {
   background-color: #FF3773;
   padding: 18px 0;
-  margin: 0 auto 239px;
+  margin: 0 auto;
   display: block;
   width: 244px;
   color: #fff;
@@ -98,8 +100,16 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
   transition: all 0.5s ease;
 }
 
-.offer__btn:hover {
+.intro-offer__btn:hover {
   background-color: #AF3373;
+}
+
+.logo {
+  background: url(../img/logo.svg);
+  width: 75px;
+  height: 77px;
+  display: block;
+  margin: 0 auto 195px;
 }
 
 .arrow-down {
@@ -172,7 +182,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
   align-items: center;
 }
 
-.watch-routes {
+.routes-btn {
   font-family: "Open Sans Extra Bold";
   font-size: 16px;
   color: #FF3773;
@@ -184,7 +194,7 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
   transition: all 0.5s ease;
 }
 
-.watch-routes:hover {
+.routes-btn:hover {
   border: 1px solid rgba(255, 255, 255, 0);
   background-color: #FF3773;
   color: #fff;
@@ -201,7 +211,6 @@ body, h1, h2, h3, h4, h5, h6, p, ul, li {
 }
 
 .beginning-wrapper {
-  height: 626px;
   background: #F1F1F5 url("../img/photo-1.jpg") no-repeat right top/50% 100%;
   padding: 185px 0;
 }
