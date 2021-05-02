@@ -201,13 +201,6 @@ img {
 
 .header-list__item {
   list-style-type: none;
-  padding: 32px 20px 33px;
-  border-bottom: 2px solid rgba(255, 255, 255, 0);
-  transition: all 0.5s ease;
-}
-
-.header-list__item:hover {
-  border-bottom: 2px solid white;
 }
 
 .header-list__item a {
@@ -215,6 +208,13 @@ img {
   font-size: 16px;
   color: #fff;
   display: block;
+  padding: 32px 20px 33px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+  transition: all 0.5s ease;
+}
+
+.header-list__item a:hover {
+  border-bottom: 2px solid white;
 }
 
 .intro-wrapper__descr {
