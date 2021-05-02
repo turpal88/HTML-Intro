@@ -148,8 +148,12 @@ img {
   margin: 0 auto 60px;
 }
 
-.descr_service, .descr_projects,
-.info__descr_service,
+.descr_service,
+.info__descr_service {
+  max-width: 700px;
+}
+
+.descr_projects,
 .info__descr_projects {
   max-width: 730px;
 }
@@ -177,21 +181,16 @@ img {
   font-size: 13px;
 }
 
-.descr_footer,
-.info__descr_footer {
-  font-size: 14px;
-}
-
 .header {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../img/header-bg.jpg") no-repeat center center/cover;
   padding-bottom: 335px;
-  text-align: center;
 }
 
 .header-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 223px;
 }
 
 .header-list {
@@ -202,6 +201,13 @@ img {
 
 .header-list__item {
   list-style-type: none;
+  padding: 32px 20px 33px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
+  transition: all 0.5s ease;
+}
+
+.header-list__item:hover {
+  border-bottom: 2px solid white;
 }
 
 .header-list__item a {
@@ -209,21 +215,6 @@ img {
   font-size: 16px;
   color: #fff;
   display: block;
-  padding: 37px 20px 33px;
-  transition: all 0.5s ease;
-  border-bottom: 2px solid rgba(255, 255, 255, 0);
-}
-
-.header-list__item a:hover {
-  border-bottom-color: #fff;
-}
-
-.header-list__item:last-child a {
-  padding-right: 0;
-}
-
-.intro-wrapper {
-  padding-top: 223px;
 }
 
 .intro-wrapper__descr {
@@ -301,7 +292,7 @@ img {
   font-family: "Montserrat Medium";
   font-size: 16px;
   color: #4985FF;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .standarts-wrapper {
@@ -402,9 +393,7 @@ img {
 }
 
 .links-list__item {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  list-style-type: none;
 }
 
 .links-list__item:not(:last-child) {
@@ -415,11 +404,12 @@ img {
   font-family: "Montserrat Regular";
   font-size: 14px;
   color: #999;
-  margin-right: 10px;
+  display: flex;
+  justify-content: flex-start;
 }
 
-.item-wrapper {
-  margin-right: 15px;
+.links-list__item a img {
+  margin-right: 10px;
 }
 
 .rights-reserved {
