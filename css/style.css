@@ -96,7 +96,7 @@ img {
 }
 
 .btn_header {
-  margin: 0 auto 262px;
+  margin: 0 auto;
 }
 
 .btn_ingredients {
@@ -120,6 +120,7 @@ img {
 }
 
 .header-wrapper {
+  margin-bottom: 164px;
   text-align: center;
 }
 
@@ -136,7 +137,7 @@ img {
   justify-content: space-between;
   align-items: center;
   letter-spacing: 0.1em;
-  margin-bottom: 29px;
+  margin-bottom: 231px;
 }
 
 .logo {
@@ -196,12 +197,8 @@ img {
   justify-content: space-between;
 }
 
-.bakery-item:nth-child(2n+1) {
-  margin-right: 94px;
-}
-
 .bakery-item:nth-child(1), .bakery-item:nth-child(2) {
-  margin-bottom: 51px;
+  margin-bottom: 30px;
 }
 
 .bakery-item__img {
@@ -219,9 +216,7 @@ img {
 
 .bakery-item-content {
   max-width: 268px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  margin: auto 0;
 }
 
 .bakery-item-content__subtitle {
@@ -249,7 +244,7 @@ img {
 
 .projects-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   margin-bottom: 14px;
 }
@@ -257,7 +252,6 @@ img {
 .projects-item {
   width: 345px;
   position: relative;
-  margin: 12px;
 }
 
 .projects-item__img {
@@ -388,7 +382,7 @@ img {
 }
 
 .video iframe {
-  width: 830px;
+  width: 100%;
   height: 426px;
   border-radius: 10px;
 }
@@ -401,10 +395,13 @@ img {
 
 .footer-list:nth-child(2) {
   min-width: 242px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .footer-list:last-child {
-  margin-top: 41px;
+  margin: auto 0;
 }
 
 .footer-list:last-child .footer-list-title {
@@ -427,14 +424,14 @@ img {
   font-family: "Ubuntu Bold";
   font-size: 19px;
   color: #000;
-  margin-bottom: 41px;
+  margin-bottom: 30px;
 }
 
 .links-list {
   display: flex;
   justify-content: space-between;
-  margin-top: 82px;
   width: 100%;
+  margin-bottom: 10px;
 }
 
 .links-list a {
@@ -442,19 +439,22 @@ img {
   color: #FF4975;
 }
 
-.list-wrapper__link {
+.list-wrapper__item {
+  margin-bottom: 25px;
+}
+
+.list-wrapper__item:last-child {
+  margin-bottom: 0;
+}
+
+.list-link {
   display: flex;
   justify-content: flex-start;
-  margin-bottom: 25px;
   font-size: 14px;
   color: #000;
 }
 
-.list-wrapper__link:last-child {
-  margin-bottom: 0;
-}
-
-.list-wrapper__link img {
+.list-link img {
   margin-right: 17px;
 }
 
@@ -564,8 +564,15 @@ form button {
   .container {
     width: 90%;
   }
+  .header {
+    padding-bottom: 30px;
+  }
   .header-wrapper {
     text-align: left;
+    margin-bottom: 72px;
+  }
+  .menu-wrapper {
+    margin-bottom: 59px;
   }
   .main-title {
     font-size: 18px;
@@ -591,22 +598,11 @@ form button {
     width: 210px;
     border: 3px solid #B8B8B8;
     border-radius: 15px;
-  }
-  .bakery-item:nth-child(n) {
     flex-direction: column;
-  }
-  .bakery-item:nth-child(2n+1) {
-    margin-right: 0;
-  }
-  .bakery-item:nth-child(1), .bakery-item:nth-child(2) {
-    margin-bottom: 0;
-  }
-  .bakery-item:not(:last-child) {
-    margin-bottom: 25px;
+    padding: 15px;
   }
   .bakery-item-content {
     max-width: 210px;
-    padding: 10px;
   }
   .bakery-item-content__subtitle {
     font-size: 16px;
@@ -615,7 +611,7 @@ form button {
     font-size: 14px;
   }
   .ingredients {
-    width: 274px;
+    width: 90%;
     padding-top: 18px;
   }
   .ingredients__title {
@@ -626,10 +622,10 @@ form button {
     margin-bottom: 5px;
   }
   .btn_ingredients {
-    width: 160px;
+    width: 90%;
   }
   .video iframe {
-    width: 250px;
+    width: 90%;
     height: 250px;
   }
   .video-title {

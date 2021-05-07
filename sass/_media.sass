@@ -50,8 +50,13 @@
 @media (max-width: 575px)
     .container
         width: 90%
+    .header
+        padding-bottom: 30px
     .header-wrapper
         text-align: left
+        margin-bottom: 72px
+    .menu-wrapper
+        margin-bottom: 59px
     .main-title
         font-size: 18px
     .descr
@@ -70,25 +75,16 @@
         width: 210px
         border: 3px solid #B8B8B8
         border-radius: 15px
-        &:nth-child(n)
-            flex-direction: column
-        &:nth-child(2n+1)
-            margin-right: 0
-        &:nth-child(1),
-        &:nth-child(2)
-            margin-bottom: 0
-        &:not(:last-child)
-           margin-bottom: 25px
-        
+        flex-direction: column
+        padding: 15px
         &-content
             max-width: 210px
-            padding: 10px
             &__subtitle
                 font-size: 16px
             &__descr
                 font-size: 14px
     .ingredients
-        width: 274px
+        width: 90%
         padding-top: 18px
         &__title
             font-size: 14px
@@ -96,10 +92,10 @@
             font-size: 12px
             margin-bottom: 5px
     .btn_ingredients
-        width: 160px
+        width: 90%
     .video
         iframe
-            width: 250px
+            width: 90%
             height: 250px
     .video-title
         font-size: 26px
