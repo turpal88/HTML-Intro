@@ -31,66 +31,76 @@
     <!-- Header -->
     <header class="header">
       <div class="container">
-        <div class="row">
-          <a href="#" class="gamburger col-sm-1">
-            <img src="img/gamburger-icon.png" alt="gamburger" />
-          </a>
-          <ul class="header-list col-md-3 col-sm-5">
-            <li class="header-list__item">
-              <a href="#">Tour</a>
-            </li>
-            <li class="header-list__item">
-              <a href="#">Features</a>
-            </li>
-            <li class="header-list__item">
-              <a href="#">Pricing</a>
-            </li>
-          </ul>
-          <div class="header-logo col-2 offset-2">
-            <img src="img/header-logo.png" alt="header-logo" />
+        <div class="row d-flex align-items-center">
+          <div class="col-4 d-flex align-items-center">
+            <button class="gamburger">
+              <img src="img/gamburger-icon.png" alt="gamburger" />
+            </button>
+            <ul class="header-list d-flex">
+              <li class="header-list__item">
+                <a href="#">Tour</a>
+              </li>
+              <li class="header-list__item">
+                <a href="#">Features</a>
+              </li>
+              <li class="header-list__item">
+                <a href="#">Pricing</a>
+              </li>
+            </ul>
           </div>
-          <ul
-            class="
-              contacts-list
-              col-xl-2
-              offset-xl-1
-              col-md-2
-              offset-md-0
-              col-sm-3
-              offset-sm-0
-            "
-          >
-            <li class="contacts-list__item">
-              <a href="#">Help</a>
-            </li>
-            <li class="contacts-list__item">
-              <a href="#">Contacts</a>
-            </li>
-          </ul>
-          <a class="apple-link col-2 col-lg-3" href="#">
-            <img src="img/apple-icon.png" alt="apple-icon" />
-            <img src="img/getApp-icon.png" alt="getApp-icon" />
-          </a>
+          <div class="col-2 offset-1">
+            <img
+              class="header-logo"
+              src="img/header-logo.png"
+              alt="header-logo"
+            />
+          </div>
+          <div class="col-4 offset-1 d-flex justify-content-start">
+            <ul class="contacts-list d-flex align-items-center">
+              <li class="contacts-list__item">
+                <a href="#">Help</a>
+              </li>
+              <li class="contacts-list__item">
+                <a href="#">Contacts</a>
+              </li>
+            </ul>
+            <a
+              class="
+                apple-link
+                d-flex
+                justify-content-between
+                align-items-center
+              "
+              href="#"
+            >
+              <img src="img/apple-icon.png" alt="apple-icon" />
+              <img src="img/getApp-icon.png" alt="getApp-icon" />
+            </a>
+          </div>
         </div>
         <div class="row">
-          <div class="header-content col-10 offset-1">
-            <h1 class="header-content__title">What happens tomorrow?</h1>
-            <p class="header-content__descr">
+          <div class="col-12">
+            <h1 class="header-content-title">What happens tomorrow?</h1>
+            <p class="header-content-descr mx-auto">
               The sight of the tumblers restored Bob Sawyer to a degree of
               equanimity which he had not possessed since his interview with his
               landlady. His face brightened up, and he began to feel quite
               convivial.
             </p>
-          </div>
-        </div>
-        <div class="row">
-          <a href="#" class="watch-video col-2 offset-5">
-            <img src="img/play-icon.png" alt="play-icon" />Watch Video
-          </a>
-        </div>
-        <div class="row">
-          <div class="header-img col-5 offset-4">
-            <img src="img/iPhone 6.png" alt="iPhone 6" />
+            <a
+              href="#"
+              class="
+                watch-video
+                d-flex
+                justify-content-between
+                align-items-center
+              "
+            >
+              <img src="img/play-icon.png" alt="play-icon" />Watch Video
+            </a>
+            <div class="header-img">
+              <img src="img/iPhone 6.png" alt="iPhone 6" />
+            </div>
           </div>
         </div>
       </div>
