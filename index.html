@@ -29,14 +29,14 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header" id="header">
       <div class="container">
         <div class="row d-flex align-items-center">
-          <div class="col-4 d-flex align-items-center">
+          <div class="col-lg-4 col-md-5 d-flex align-items-center">
             <button class="gamburger">
               <img src="img/gamburger-icon.png" alt="gamburger" />
             </button>
-            <ul class="header-list d-flex">
+            <ul class="header-list d-md-flex d-none">
               <li class="header-list__item">
                 <a href="#">Tour</a>
               </li>
@@ -48,15 +48,22 @@
               </li>
             </ul>
           </div>
-          <div class="col-2 offset-1">
+          <div class="col-xl-2 col-md-3 offset-xl-1 offset-md-0">
             <img
               class="header-logo"
               src="img/header-logo.png"
               alt="header-logo"
             />
           </div>
-          <div class="col-4 offset-1 d-flex justify-content-start">
-            <ul class="contacts-list d-flex align-items-center">
+          <div
+            class="
+              col-md-4
+              offset-xl-1 offset-md-0
+              d-flex
+              justify-content-lg-start justify-content-end
+            "
+          >
+            <ul class="contacts-list d-md-flex d-none align-items-center">
               <li class="contacts-list__item">
                 <a href="#">Help</a>
               </li>
@@ -67,7 +74,7 @@
             <a
               class="
                 apple-link
-                d-flex
+                d-lg-flex d-none
                 justify-content-between
                 align-items-center
               "
@@ -109,34 +116,38 @@
     <section class="feature">
       <div class="container">
         <div class="row">
-          <div class="feature-item col-12 col-sm-6">
-            <div class="feature-item__icon">
-              <img src="img/lock-icon.png" alt="lock-icon" />
+          <div class="col-12 col-sm-6">
+            <div class="feature-item feature-item-1">
+              <div class="feature-item__icon">
+                <img src="img/lock-icon.png" alt="lock-icon" />
+              </div>
+              <h2 class="feature-item__title">Real-time all the time</h2>
+              <p class="feature-item__descr">
+                Thus much I thought proper to tell you in relation to yourself,
+                and to the trust I reposed in you.
+              </p>
+              <p class="feature-item__descr">
+                Just then her head struck against the roof of the hall: in fact
+                she was now more than nine feet high, and she at once took up
+                the little golden key and hurried off to the garden door.
+              </p>
             </div>
-            <h2 class="feature-item__title">Real-time all the time</h2>
-            <p class="feature-item__descr">
-              Thus much I thought proper to tell you in relation to yourself,
-              and to the trust I reposed in you.
-            </p>
-            <p class="feature-item__descr">
-              Just then her head struck against the roof of the hall: in fact
-              she was now more than nine feet high, and she at once took up the
-              little golden key and hurried off to the garden door.
-            </p>
           </div>
-          <div class="feature-item col-12 col-sm-6">
-            <div class="feature-item__icon">
-              <img src="img/clock-icon.png" alt="clock-icon" />
+          <div class="col-12 col-sm-6">
+            <div class="feature-item feature-item-2">
+              <div class="feature-item__icon">
+                <img src="img/clock-icon.png" alt="clock-icon" />
+              </div>
+              <h2 class="feature-item__title">Adopt without any obstacles</h2>
+              <p class="feature-item__descr">
+                This sounded a very good reason, and Alice was quite pleased to
+                know it. 'I never thought of that before!' she said.
+              </p>
+              <p class="feature-item__descr">
+                This I have produced as a scantling of Jack’s great eloquence
+                and the force of his reasoning upon such abstruse matters.
+              </p>
             </div>
-            <h2 class="feature-item__title">Adopt without any obstacles</h2>
-            <p class="feature-item__descr">
-              This sounded a very good reason, and Alice was quite pleased to
-              know it. 'I never thought of that before!' she said.
-            </p>
-            <p class="feature-item__descr">
-              This I have produced as a scantling of Jack’s great eloquence and
-              the force of his reasoning upon such abstruse matters.
-            </p>
           </div>
         </div>
       </div>
@@ -145,28 +156,33 @@
     <section class="iphone-feature">
       <div class="container">
         <div class="row">
-          <div class="iphone-feature-img col-12 col-sm-7">
-            <img src="img/iPhone6-1.png" alt="iPhone6-1" />
+          <div class="col-12 col-sm-7">
+            <div class="iphone-feature-img">
+              <img src="img/iPhone6-1.png" alt="iPhone6-1" />
+            </div>
           </div>
-          <div class="iphone-feature-item col-12 col-sm-5">
-            <h2 class="iphone-feature-item__title">
-              <span>Your day</span>
-              is protected
-            </h2>
-            <p class="iphone-feature-item__descr">
-              There have not been any since we have lived here, said my mother.
-            </p>
-            <p class="iphone-feature-item__descr">
-              We thought - Mr. Copperfield thought - it was quite a large
-              rookery; but the nests were very old ones, and the birds have
-              deserted them a long while.
-            </p>
-            <div class="iphone-feature-item__links">
-              <a href="#"
-                >Try to hack us
-                <img src="img/arrow-right.svg" alt="arrow-right"
-              /></a>
-              <a href="#">Learn more</a>
+          <div class="col-12 col-sm-5">
+            <div class="iphone-feature-item">
+              <h2 class="iphone-feature-item__title">
+                <span>Your day</span>
+                is protected
+              </h2>
+              <p class="iphone-feature-item__descr">
+                There have not been any since we have lived here, said my
+                mother.
+              </p>
+              <p class="iphone-feature-item__descr">
+                We thought - Mr. Copperfield thought - it was quite a large
+                rookery; but the nests were very old ones, and the birds have
+                deserted them a long while.
+              </p>
+              <div class="iphone-feature-item__links">
+                <a href="#"
+                  >Try to hack us
+                  <img src="img/arrow-right.svg" alt="arrow-right"
+                /></a>
+                <a href="#">Learn more</a>
+              </div>
             </div>
           </div>
         </div>
@@ -176,31 +192,35 @@
     <section class="map-feature">
       <div class="container">
         <div class="row">
-          <div class="map-feature-item col-12 col-sm-5">
-            <h2 class="map-feature-item__title">We are almost everywhere</h2>
-            <p class="map-feature-item__descr">
-              Now the races of these two have been for some ages utterly
-              extinct, and besides to discourse any further of them would not be
-              at all to my purpose.
-            </p>
-            <p class="map-feature-item__descr">
-              Thus much I thought proper to tell you in relation to yourself,
-              and to the trust I reposed in you.
-            </p>
-            <div class="map-feature-item__partners">
-              <h3 class="partners-title">Partners</h3>
-              <div class="map-feature-item-links">
-                <a href="#"
-                  ><img src="img/dropbox-logo.png" alt="dropbox-logo"
-                /></a>
-                <a href="#"
-                  ><img src="img/evernote-logo.png" alt="evernote-logo"
-                /></a>
+          <div class="col-12 col-sm-5">
+            <div class="map-feature-item">
+              <h2 class="map-feature-item__title">We are almost everywhere</h2>
+              <p class="map-feature-item__descr">
+                Now the races of these two have been for some ages utterly
+                extinct, and besides to discourse any further of them would not
+                be at all to my purpose.
+              </p>
+              <p class="map-feature-item__descr">
+                Thus much I thought proper to tell you in relation to yourself,
+                and to the trust I reposed in you.
+              </p>
+              <div class="map-feature-item__partners">
+                <h3 class="partners-title">Partners</h3>
+                <div class="map-feature-item-links">
+                  <a href="#"
+                    ><img src="img/dropbox-logo.png" alt="dropbox-logo"
+                  /></a>
+                  <a href="#"
+                    ><img src="img/evernote-logo.png" alt="evernote-logo"
+                  /></a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="map col-12 col-sm-7">
-            <img src="img/worldMap.png" alt="map.png" />
+          <div class="col-12 col-sm-7">
+            <div class="map">
+              <img src="img/worldMap.png" alt="map.png" />
+            </div>
           </div>
         </div>
       </div>
@@ -209,50 +229,55 @@
     <footer class="footer">
       <div class="container">
         <div class="row">
-          <div class="appstore col-md-3 col-sm-12">
-            <div class="appstore__img col-3">
-              <img src="img/header-logo.png" alt="header-logo" />
+          <div class="col-lg-3 col-sm-12">
+            <div class="appstore">
+              <a href="#header" class="appstore__img col-3">
+                <img src="img/header-logo.png" alt="header-logo" />
+              </a>
+              <p class="appstore__descr">
+                It was some time before he obtained any answer, and the reply,
+                when made, was unpropitious.
+              </p>
+              <a href="#" class="appstore__icon"
+                ><img src="img/appStore-icon.png" alt="appstore-icon"
+              /></a>
             </div>
-            <p class="appstore__descr">
-              It was some time before he obtained any answer, and the reply,
-              when made, was unpropitious.
-            </p>
-            <a href="#" class="appstore__icon"
-              ><img src="img/appStore-icon.png" alt="appstore-icon"
-            /></a>
           </div>
-          <div
-            class="footer-menu-item col-md-2 col-sm-4 offset-md-1 offset-sm-0"
-          >
-            <h3 class="footer-menu-item__title">Learn More</h3>
-            <ul class="footer-menu-item__list">
-              <li><a href="#">How it works?</a></li>
-              <li><a href="#">Meeting tools</a></li>
-              <li><a href="#">Live striming</a></li>
-              <li><a href="#">Contat method</a></li>
-            </ul>
+
+          <div class="col-lg-2 col-sm-4 col-12 offset-lg-1">
+            <div class="footer-menu-item menu-item-1">
+              <h3 class="footer-menu-item__title">Learn More</h3>
+              <ul class="footer-menu-item__list">
+                <li><a href="#">How it works?</a></li>
+                <li><a href="#">Meeting tools</a></li>
+                <li><a href="#">Live striming</a></li>
+                <li><a href="#">Contat method</a></li>
+              </ul>
+            </div>
           </div>
-          <div
-            class="footer-menu-item col-md-2 col-sm-4 offset-md-1 offset-sm-0"
-          >
-            <h3 class="footer-menu-item__title">About Us</h3>
-            <ul class="footer-menu-item__list">
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Features</a></li>
-              <li><a href="#">Privacy police</a></li>
-              <li><a href="#">Terms & Conditions</a></li>
-            </ul>
+
+          <div class="col-lg-2 col-sm-4 col-12 offset-lg-1">
+            <div class="footer-menu-item menu-item-2">
+              <h3 class="footer-menu-item__title">About Us</h3>
+              <ul class="footer-menu-item__list">
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Privacy police</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+              </ul>
+            </div>
           </div>
-          <div
-            class="footer-menu-item col-md-2 col-sm-4 offset-md-1 offset-sm-0"
-          >
-            <h3 class="footer-menu-item__title">Support</h3>
-            <ul class="footer-menu-item__list">
-              <li><a href="#">F.A.Q.</a></li>
-              <li><a href="#">Contact us</a></li>
-              <li><a href="#">Live chat</a></li>
-              <li><a href="#">Phone call</a></li>
-            </ul>
+
+          <div class="col-lg-2 col-sm-4 col-12 offset-lg-1">
+            <div class="footer-menu-item menu-item-3">
+              <h3 class="footer-menu-item__title">Support</h3>
+              <ul class="footer-menu-item__list">
+                <li><a href="#">F.A.Q.</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Live chat</a></li>
+                <li><a href="#">Phone call</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

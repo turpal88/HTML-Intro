@@ -1,192 +1,117 @@
-@media (max-width: 1400px)
+@media (max-width: 1200px)
     .header
-        padding-top: 50px
-        max-height: 1001px
-        overflow: hidden
-        &-logo
-            margin-left: 33px
+        &-img
+            margin-left: auto
+            margin-right: auto
         &-content
             &-title
-                font-size: 62px
-                margin-top: 103px
-                margin-bottom: 32px
-                text-align: center
-                padding-left: 42px
-            &-descr
-                font-size: 20px
-                text-align: center
-                max-width: 786px
-                margin-bottom: 55px
-        &-list
-            margin-bottom: 0
-            padding-left: 21px
-            &__item
-                &:nth-child(2)
-                    margin-left: 43px
-                    margin-right: 47px
-        &-img
-            max-width: 369px
-            margin-left: 379px
-    .contacts
-        &-list
-            margin-bottom: 0
-            padding-left: 0
-            margin-right: 33px
-            margin-left: 90px
-            &__item
-                &:nth-child(1)
-                    margin-right: 33px
-    .header-list__item a, .contacts-list__item a
-        font-size: 16px
-    .apple-link
-        border-radius: 50px
-        padding-left: 17px
-        padding-right: 25px
+                padding-left: 0
     .watch-video
-        margin-bottom: 55px
-        margin-left: 457px
-
-@media (max-width: 1200px)
+        margin-left: auto
+        margin-right: auto
+    .contacts-list
+        margin-right: 0
+        margin-left: 0
+    .apple-link
+        margin-left: 29px
+@media (max-width: 1400px)
     .iphone-feature
         &-item
             &__descr
                 min-width: 0
+        .container
+            max-width: $container-width
     .footer
         padding-top: 60px
 @media (max-width: 992px)
     .header
-        max-height: 761px
-        &-logo
-            margin-left: 47px
-        &-list
-            margin-left: 0
         &-content
-            &__title
-                font-size: 42px
-            &__descr
-                font-size: 18px
-        &-img
-            margin-left: auto
-            margin-right: auto
-    .watch-video
-        margin-left: auto
-        margin-right: auto
+            &-title
+                font-size: 46px
     .feature
         padding-top: 50px
-        &-item
-            &__descr
-                font-size: 16px
     .iphone-feature
         padding-top: 50px
         &-item
-            &__title
-                font-size: 36px
-            &__descr
-                min-width: 0
-                font-size: 16px
-            &__links
-                a
-                    font-size: 14px
-                    &:nth-child(1)
-                        padding-right: 13px
-                        padding-left: 20px
-                        img
-                            margin-left: 17px
-                    &:nth-child(2)
-                        padding-right: 15px
-                        padding-left: 15px
-    .map-feature
-        padding-top: 50px
-        &-item
-            &__title
-                font-size: 36px
-            &__descr
-                font-size: 16px
-    .map
-        padding-left: 0
-    .footer
-        &-menu-item
-            &:nth-of-type(2),
-            &:nth-of-type(3),
-            &:nth-of-type(4)
-                padding-left: 0
-@media (max-width: 768px)
-    .header
-        &-logo
-            display: none
-        &-content
-            &__title
-                font-size: 30px
-            &__descr
-                font-size: 16px
-        &-img
-            margin-left: auto
-            margin-right: auto
-    .watch-video
-        margin-left: auto
-        margin-right: auto
-    .feature
-        &-item
-            &__title
-                font-size: 20px
-            &__descr
-                font-size: 14px
-    .iphone-feature
-        &-item
-            &__title
-                font-size: 20px
-            &__descr
-                font-size: 14px
             &__links
                 flex-direction: column
-                align-items: center
+                
                 a
+                    
                     &:nth-child(1)
-                        width: 150px
-                        margin-bottom: 10px
+                        margin-bottom: 20px
+                        padding-left: 0
+                        padding-right: 0
                     &:nth-child(2)
-                        width: 150px
                         margin-left: 0
     .map-feature
+        padding-top: 50px
         &-item
             &__title
-                font-size: 20px
+                font-size: 34px
+                margin-bottom: 35px
+    .appstore
+        margin-bottom: 50px
+    
+    
+@media (max-width: 768px)
+    .header-logo
+        display: none
+    .header
+        max-height: 900px
+        &-content
+            &-title
+                margin-top: 30px
+                font-size: 30px
+    .feature
+        &-item
+            &__descr
+                font-size: 14px
+    .feature-item-1,
+    .feature-item-2
+        padding-left: 0
+    .iphone-feature
+        &-img
+            margin-left: 0
+        &-item
+            &__title
+                font-size: 26px
                 margin-bottom: 30px
             &__descr
                 font-size: 14px
+    .map-feature
+        &-item
+            &__title
+                font-size: 26px
+            &__descr
+                font-size: 14px
+    .map
+        padding-left: 0
     .footer
-        &-menu-item
-            &__list
-                li
-                    a
-                        font-size: 14px
-    .appstore
-        margin-bottom: 50px
+        &-menu
+            &-item
+                &__list
+                    li
+                        a
+                            font-size: 14px
 @media (max-width: 576px)
-
-    // .header-list,
-    // .contacts-list,
-    // .apple-link
-    //     display: none
-    // .header
-    //     max-height: 629px
-    //     &-content
-    //         margin-top: 0
-    // .feature-item
-    //     &:nth-child(1),
-    //     &:nth-child(2)
-    //         padding-left: 30px
-    // .iphone-feature-item
-    //     &__title
-    //         margin-bottom: 20px
-    //     &__descr
-    //         &:nth-of-type(2)
-    //             margin-bottom: 20px
-    // .footer
-    //     padding-bottom: 10px
-    // .footer-menu-item
-    //     text-align: center
-                
+    .feature-item-1
+        margin-bottom: 60px
+    .iphone-feature
+        &-item
+            padding-left: 0
+    .footer
+        padding-bottom: 0
+    .menu-item-1,
+    .menu-item-2,
+    .menu-item-3
+        margin-left: auto
+        margin-right: auto
+        width: 133px
+        text-align: center
+    .menu-item1,
+    .menu-item-2
+        margin-bottom: 30px
     
 
                 

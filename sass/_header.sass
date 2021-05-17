@@ -1,19 +1,48 @@
 .header
     background: url("../img/header-bg.png") no-repeat center (center / cover)
+    overflow: hidden
+    padding-top: 50px
+    max-height: 1001px
+    &-logo
+        margin-left: 33px
     &-content
         &-title
             font-family: "Gill Sans MT Bold"
             color: $text-color
+            font-size: 62px
+            margin-top: 103px
+            margin-bottom: 32px
+            text-align: center
+            padding-left: 42px
         &-descr
             font-family: "Gill Sans MT Regular"
             color: #8C8F94
+            font-size: 20px
+            text-align: center
+            max-width: 786px
+            margin-bottom: 55px
+    &-list
+        margin-bottom: 0
+        padding-left: 21px
+        &__item
+            &:nth-child(2)
+                margin-left: 43px
+                margin-right: 47px
     button
         background-color: rgba(255,255,255,0)
         border: none
     &-img
         max-width: 369px
         margin-left: 379px
-
+.contacts
+    &-list
+        margin-bottom: 0
+        padding-left: 0
+        margin-right: 33px
+        margin-left: 90px
+        &__item
+            &:nth-child(1)
+                margin-right: 33px
                 
 .header-list__item,
 .contacts-list__item
@@ -22,12 +51,14 @@
 .header-list__item a, .contacts-list__item a
     font-family: "Gill Sans MT Regular"
     color: $text-color
-
+    font-size: 16px
 .apple-link
     background-color: #267DF4
-    min-width: 133px
     height: 43px
-    
+    border-radius: 50px
+    padding-left: 17px
+    padding-right: 25px
+    min-width: 133px
 .watch-video
     font-family: "Lato Regular"
     font-size: 16px
@@ -36,4 +67,5 @@
     max-width: 210px
     border: 2px solid $text-color
     border-radius: 30px
-    
+    margin-bottom: 55px
+    margin-left: 457px
