@@ -1,6 +1,46 @@
 .slider
-    padding-top: 74px
+    padding: 74px 0 74px
     &-title
         margin-bottom: 30px
         font-family: $OS300
         font-size: 30px
+    &-content
+        overflow: hidden
+        min-height: 345px
+        position: relative
+        &__item
+            font-family: $OS700
+            font-size: 16px
+            padding: 160px 312px
+            border: 1px solid #AFAFAF
+            position: absolute
+            left: -100%
+            &:nth-child(1)
+                background-color: #5BFF4D
+            &:nth-child(2)
+                background-color: #FCFF50
+            &:nth-child(3)
+                background-color: #FF505B
+                
+    &-wrapper
+        position: relative
+.slide-active
+    left: 0
+    top: 0
+.arrow-left,
+.arrow-right
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    transition: all 0.5s ease
+    &:hover
+        svg
+            path
+                stroke: #000
+.arrow-left
+    left: -35px
+    
+        
+.arrow-right
+    right: -35px
+            

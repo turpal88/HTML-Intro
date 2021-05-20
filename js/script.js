@@ -24,3 +24,41 @@ tabsWrapper.addEventListener("click", (event) => {
     }
   }
 });
+
+//Слайдер
+const slideArr = document.querySelectorAll(".slider-content__item"),
+  arrowLeft = document.querySelector(".arrow-left"),
+  arrowRight = document.querySelector(".arrow-right");
+let curPos = 0;
+const makeAktiveClass = (curItem) => {
+  slideArr.forEach((item) => {
+    item.classList.remove("slide-active");
+  });
+  curItem.classList.add("slide-active");
+};
+slideArr.forEach((el, index) => {
+  if (el.classList.contains("slide-active")) {
+    curPos = index;
+  }
+});
+
+arrowLeft.addEventListener("click", (event) => {
+  event.preventDefault();
+  if (curPos > 0) {
+    curPos--;
+    makeAktiveClass(slideArr[curPos]);
+  } else if (curPos == 0) {
+    curPos = slideArr.length - 1;
+    makeAktiveClass(slideArr[curPos]);
+  }
+});
+arrowRight.addEventListener("click", (event) => {
+  event.preventDefault();
+  if (curPos < slideArr.length - 1) {
+    curPos++;
+    makeAktiveClass(slideArr[curPos]);
+  } else if (curPos == slideArr.length - 1) {
+    curPos = 0;
+    makeAktiveClass(slideArr[curPos]);
+  }
+});
