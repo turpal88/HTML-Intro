@@ -13,20 +13,20 @@
             font-size: 16px
             padding: 160px 312px
             border: 1px solid #AFAFAF
-            position: absolute
-            left: -100%
+            
+            flex-shrink: 0
+            transition-property: all
+            transition-timing-function: ease
             &:nth-child(1)
                 background-color: #5BFF4D
             &:nth-child(2)
                 background-color: #FCFF50
             &:nth-child(3)
                 background-color: #FF505B
-                
+
     &-wrapper
         position: relative
-.slide-active
-    left: 0
-    top: 0
+
 .arrow-left,
 .arrow-right
     position: absolute
@@ -39,8 +39,17 @@
                 stroke: #000
 .arrow-left
     left: -35px
-    
-        
 .arrow-right
     right: -35px
-            
+.dots
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    bottom: 26px
+    &__item
+        &:not(:last-child)
+            margin-right: 14px
+.dot-active
+    svg
+        rect
+            fill: #D0D0D0

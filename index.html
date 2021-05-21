@@ -21,6 +21,7 @@
   </head>
   <body>
     <!-- Header -->
+    <div class="overlay"></div>
     <header class="header">
       <div class="container">
         <div class="row">
@@ -120,12 +121,31 @@
       </div>
     </section>
     <!-- Modal -->
-    <section class="modal">
+    <section class="modal-section">
       <div class="container">
+        <div class="modal">
+          <h3 class="modal__title">Немного о дожде</h3>
+          <p class="modal__descr">
+            До́ждь — атмосферные осадки, выпадающие из облаков в виде капель
+            жидкости со средним диаметром от 0,5 до 6—7 мм[1].
+          </p>
+          <p class="modal__descr">Осенние дожди. Южная Эстония</p>
+          <p class="modal__descr">
+            Летний дождь в Санкт-Петербурге Жидкие осадки с меньшим диаметром
+            капель называются моросью[2]. Капли с диаметром больше 6—7 мм
+            разбиваются в процессе падения из облаков на меньшие капли, поэтому
+            даже при сильнейшем ливне диаметр капель не превышает 6—7 мм.
+            Интенсивность дождя обычно составляет от 0,25 мм/ч (моросящий дождь)
+            до 100 мм/ч (ливень)[1]. В Европе самый сильный ливень с
+            интенсивностью 15,5 мм/мин был зафиксирован в 1920 году в
+            Германии[2].
+          </p>
+        </div>
+
         <div class="row">
           <div class="col-4">
-            <h2 class="modal-title">2. Модальное окно</h2>
-            <a href="#" class="modal-btn">Вызвать дождь</a>
+            <h2 class="modal-section-title">2. Модальное окно</h2>
+            <a href="#" class="modal-section-btn">Вызвать дождь</a>
           </div>
         </div>
       </div>
@@ -137,7 +157,7 @@
           <div class="col-9">
             <h2 class="slider-title">3. Слайдер</h2>
             <div class="slider-wrapper">
-              <div class="slider-content">
+              <div class="slider-content d-flex justify-content-between">
                 <div
                   class="
                     slider-content__item
@@ -161,7 +181,6 @@
                 <div
                   class="
                     slider-content__item
-                    slide-active
                     d-flex
                     justify-content-center
                     align-items-center
@@ -169,6 +188,37 @@
                 >
                   Это слайд 3 с текстом
                 </div>
+                <div
+                  class="
+                    slider-content__item
+                    d-flex
+                    justify-content-center
+                    align-items-center
+                  "
+                >
+                  Это слайд 4 с текстом
+                </div>
+                <div
+                  class="
+                    slider-content__item
+                    d-flex
+                    justify-content-center
+                    align-items-center
+                  "
+                >
+                  Это слайд 5 с текстом
+                </div>
+                <div
+                  class="
+                    slider-content__item
+                    d-flex
+                    justify-content-center
+                    align-items-center
+                  "
+                >
+                  Это слайд 6 с текстом
+                </div>
+                <div class="dots d-flex justify-content-between"></div>
               </div>
               <a href="#" class="arrow-left">
                 <svg
@@ -197,6 +247,18 @@
         </div>
       </div>
     </section>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="footer-title">
+              Ну, что поделать, если мне все это удалось! :)
+            </h2>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="js/script.js"></script>
   </body>
 </html>
