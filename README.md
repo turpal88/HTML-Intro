@@ -5,3 +5,4 @@
 - [Лендинг Разработка сайтов](https://github.com/turpal88/WayUp-Lessons/tree/sitedev)
 - [Cake-Make Сайт выпечки ручной работы (отзывчивый)](https://github.com/turpal88/WayUp-Lessons/tree/response-layout)
 - [Макет, сверстанный по сетке Bootstrap](https://github.com/turpal88/WayUp-Lessons/tree/bootstrap-layout)
+- [JS-макет](https://github.com/turpal88/WayUp-Lessons/tree/js-layout)
