@@ -7,3 +7,4 @@
 - [Макет, сверстанный по сетке Bootstrap](https://github.com/turpal88/WayUp-Lessons/tree/bootstrap-layout)
 - [JS-макет](https://github.com/turpal88/WayUp-Lessons/tree/js-layout)
 - [Сайт ресторана (скрипты на jQuery)](https://github.com/turpal88/WayUp-Lessons/tree/jQuery-layout)
+- [Сайт интернет магазина часов (Wordpress+Woocommerce)](https://github.com/turpal88/WayUp-Lessons/tree/WP+Woocommerce)
