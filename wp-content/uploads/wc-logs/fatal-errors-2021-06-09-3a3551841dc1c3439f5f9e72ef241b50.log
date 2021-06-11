@@ -1,0 +1,8 @@
+2021-06-09T20:25:44+00:00 CRITICAL Uncaught Error: Call to undefined method WC_Product_Simple::get_attachment_url() in C:\Programms\XAMPP\htdocs\time-zone\wp-content\themes\time-zone\template-cart.php:63
+Stack trace:
+#0 C:\Programms\XAMPP\htdocs\time-zone\wp-includes\template-loader.php(106): include()
+#1 C:\Programms\XAMPP\htdocs\time-zone\wp-blog-header.php(19): require_once('C:\\Programms\\XA...')
+#2 C:\Programms\XAMPP\htdocs\time-zone\index.php(17): require('C:\\Programms\\XA...')
+#3 {main}
+  thrown в C:\Programms\XAMPP\htdocs\time-zone\wp-content\themes\time-zone\template-cart.php на строке 63
+
