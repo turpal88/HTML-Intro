@@ -1,0 +1,47 @@
+.header
+    padding-top: 51px
+    position: relative
+    z-index: 1
+    overflow: hidden
+    
+    &-sticky
+        padding: 0
+        position: fixed
+        width: 100%
+        background-color: #fff
+        .header-menu-list
+            margin-top: 37px
+            margin-bottom: 37px
+    &-menu
+        &-list
+            padding-left: 0
+            &__item
+                width: 73px
+                a
+                    color: #000
+                    font-size: 15px         
+                    line-height: 140%
+                    letter-spacing: 0.02em
+                    transition: all 0.5s ease
+                    &:hover
+                        //font-family: $RB
+                        color: #6E9C9F
+                &:not(:last-child)
+                    margin-right: 45px
+    
+                
+.logo
+    font-family: $RM
+    font-size: 16px
+    line-height: 19px
+    letter-spacing: 0.1em
+    text-transform: uppercase
+    img
+        margin-right: 15px
+.phone
+    img
+        transition: all 0.5s ease
+        margin-right: 9px
+        padding: 3px 4px 7px 6px
+        &:hover
+            background-color: $CTA
