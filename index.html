@@ -54,13 +54,13 @@
               align-items-xl-center
             "
           >
-            <a href="tel:+74958235412" class="phone d-flex align-items-center"
-              ><img src="img/header/phone-icon.png" alt="phone-icon" /> +7 (495)
-              823-54-12</a
-            >
-            <div class="basket">
+            <button type="button" class="phone d-flex align-items-center">
+              <img src="img/header/phone-icon.png" alt="phone-icon" /> +7 (495)
+              823-54-12
+            </button>
+            <button type="button" class="basket">
               <img src="img/header/basket-icon.png" alt="basket-icon" />
-            </div>
+            </button>
           </div>
         </div>
       </div>
@@ -139,8 +139,45 @@
     </section>
     <!-- Intro end -->
 
+    <!-- Modal start -->
+    <div class="modal-wrapper">
+      <div class="overlay"></div>
+      <form action="main.php" class="form-book" id="modal-form">
+        <input
+          type="text"
+          class="form-book__input"
+          placeholder="Name"
+          name="name"
+          required
+        />
+        <input
+          type="text"
+          class="form-book__input"
+          placeholder="Email"
+          name="email"
+          required
+        />
+        <input
+          type="text"
+          class="form-book__input"
+          placeholder="Phone"
+          name="phone"
+          required
+        />
+        <button class="btn select-btn">Заказать звонок</button>
+      </form>
+    </div>
+    <!-- Modal end -->
+
+    <!-- Messages for user start-->
+    <div class="response-wrapper">
+      <div class="overlay"></div>
+      <div class="response"></div>
+    </div>
+    <!-- Messages for user end -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/slick.js"></script>
+    <script src="js/jquery.validate.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

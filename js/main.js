@@ -59,4 +59,132 @@ $(document).ready(function () {
       $(this).attr("src", "img/header/phone-icon.png");
     },
   });
+
+  //Form validation
+  $.validator.addMethod(
+    "isName",
+    function (value, element, params) {
+      let regexp = new RegExp(params);
+      return this.optional(element) || regexp.test(value);
+    },
+    "Недопустимый формат имени"
+  );
+  $.validator.addMethod(
+    "isEmail",
+    function (value, element, params) {
+      const regexp = new RegExp(params);
+      return this.optional(element) || regexp.test(value);
+    },
+    "Введите действительный адрес электронной почты"
+  );
+  $.validator.addMethod(
+    "isPhone",
+    function (value, element, params) {
+      const regexp = new RegExp(params);
+      return this.optional(element) || regexp.test(value);
+    },
+    "Введите действительный номер телефона"
+  );
+
+  $("form").each(function () {
+    $(this).validate({
+      rules: {
+        name: {
+          required: true,
+          minlength: 2,
+          isName: /[a-zA-z]+./,
+        },
+        email: {
+          required: true,
+          email: true,
+          isEmail: /^[a-zA-Z0-9._-]+@[a-zA-Z0-9-]+\.[a-zA-Z.]{2,5}$/i,
+        },
+        phone: {
+          required: true,
+          isPhone: /^\+[0-9]{10,11}/,
+        },
+      },
+      messages: {
+        name: {
+          required: "Поле 'Имя' обязательно к заполнению",
+        },
+
+        email: {
+          required: "Поле 'Email' обязательно к заполнению",
+          email: "Недопустимый формат имени email",
+        },
+        phone: {
+          required: "Поле 'Телефон' обязательно к заполнению",
+        },
+      },
+    });
+  });
+
+  //Строковые переменные для отображения ответа от сервера
+  const successResponse = "Отлично! Мы скоро вам перезвоним.";
+  const failResponse = "Что-то пошло не так...Не удалось отправить форму.";
+
+  //Функция, которая удаляет div с ответом от сервера через 3 сек
+  function removeResponse() {
+    setTimeout(function () {
+      $(".response-wrapper").fadeOut(100);
+    }, 3000);
+  }
+
+  //Функция отправки ajax-запроса на сервер
+  function feedbackForm(form) {
+    let response = $.ajax({
+      method: "POST",
+      url: "main.php",
+      data: form.serialize(),
+      success: function (data) {
+        if (response.readyState == 4) {
+          // alert(4);
+          if (response.status == 200) {
+            // alert(200);
+            $(".modal-wrapper").fadeOut(100);
+            $(".response-wrapper").fadeIn(200);
+            $(".response").removeClass("response_fail");
+            $(".response").addClass("response_success");
+            $(".response").html(successResponse);
+            removeResponse();
+            form.trigger("reset");
+          }
+        }
+      },
+    });
+
+    //Если все плохо, показывается сообщение пользователю что что-то пошло не так
+    response.fail(function () {
+      // alert("all bad");
+
+      $(".modal-wrapper").fadeOut(100);
+      $(".response-wrapper").fadeIn(200);
+      $(".response").removeClass("response_success");
+      $(".response").addClass("response_fail");
+      $(".response").html(failResponse);
+      removeResponse();
+      form.trigger("reset");
+    });
+  }
+
+  $(".response-wrapper").on("click", function (event) {
+    if ($(event.target).closest(".response").length == 0) {
+      $(".response-wrapper").fadeOut(100);
+    }
+  });
+  $("#modal-form").on("submit", function (e) {
+    e.preventDefault();
+    feedbackForm($("#modal-form"));
+  });
+
+  //Modal
+  $("button.phone").on("click", function () {
+    $(".modal-wrapper").fadeIn(500);
+  });
+  $(".modal-wrapper").on("click", function (event) {
+    if ($(event.target).closest("#modal-form").length == 0) {
+      $(this).fadeOut(500);
+    }
+  });
 });

@@ -4672,6 +4672,13 @@ img {
   display: block;
 }
 
+button {
+  border: none;
+  outline: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
 .header {
   padding-top: 51px;
   position: relative;
@@ -4757,16 +4764,12 @@ img {
 .arrow-down {
   width: 67px;
   height: 100%;
-  border: none;
-  outline: none;
   background: rgba(110, 156, 159, 0.1);
 }
 
 .open-shop {
   width: 214px;
   height: 100%;
-  border: none;
-  outline: none;
   background-color: #6E9C9F;
   color: #fff;
   padding: 0;
@@ -4818,4 +4821,47 @@ img {
   position: absolute;
   bottom: 0;
   left: -80px;
+}
+
+.modal-wrapper,
+.response-wrapper {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9999999;
+  display: none;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#modal-form,
+.response {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.response {
+  width: 100%;
+  height: 150px;
+  text-align: center;
+  line-height: 150px;
+}
+
+.response_success {
+  background-color: #aff5b2;
+}
+
+.response_fail {
+  background-color: #f55a5a;
 }
