@@ -4,14 +4,10 @@ body
     font-family: $RM
     font-size: 55px
     line-height: 110%
-    letter-spacing: 0.02em
-    
-    
 .descr
     font-family: $RR
     font-size: 20px
     line-height: 140%
-    letter-spacing: 0.02em
     &_offer
         margin-top: 45px
         max-width: 385px
@@ -24,5 +20,34 @@ button
     outline: none
     background-color: #fff
     cursor: pointer
-
+input
+    border: none
+    outline: none
+.btn
+    background-color: $CTA
+    color: #fff
+    padding: 0
+    &_open-shop
+        width: 214px
+        height: 100%
+        transition: all 0.5s ease
+        &:hover
+            background-color:#509498
+    &_order-call
+        width: 351px
+        font-size: 17px
+        padding: 22px 107px
+        transition: all 0.5s ease
+        &:hover
+            background-color:#509498
+    &_close-response
+        background-color: #fff
+        color: $CTA
+        font-size: 17px
+        padding: 22px 50px
+        border: 1px solid $CTA
+        transition: all 0.5s ease
+        &:hover
+            background-color: $CTA
+            color: #fff
 

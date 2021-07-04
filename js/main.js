@@ -86,38 +86,36 @@ $(document).ready(function () {
     "Введите действительный номер телефона"
   );
 
-  $("form").each(function () {
-    $(this).validate({
-      rules: {
-        name: {
-          required: true,
-          minlength: 2,
-          isName: /[a-zA-z]+./,
-        },
-        email: {
-          required: true,
-          email: true,
-          isEmail: /^[a-zA-Z0-9._-]+@[a-zA-Z0-9-]+\.[a-zA-Z.]{2,5}$/i,
-        },
-        phone: {
-          required: true,
-          isPhone: /^\+[0-9]{10,11}/,
-        },
+  $("#modal-form").validate({
+    rules: {
+      name: {
+        required: true,
+        minlength: 2,
+        isName: /[a-zA-Zа-яА-Я]+./,
       },
-      messages: {
-        name: {
-          required: "Поле 'Имя' обязательно к заполнению",
-        },
+      email: {
+        required: true,
+        email: true,
+        isEmail: /^[a-zA-Z0-9._-]+@[a-zA-Z0-9-]+\.[a-zA-Z.]{2,5}$/i,
+      },
+      phone: {
+        required: true,
+        isPhone: /^\+[0-9]{10,11}/,
+      },
+    },
+    messages: {
+      name: {
+        required: "Поле 'Имя' обязательно к заполнению",
+      },
 
-        email: {
-          required: "Поле 'Email' обязательно к заполнению",
-          email: "Недопустимый формат имени email",
-        },
-        phone: {
-          required: "Поле 'Телефон' обязательно к заполнению",
-        },
+      email: {
+        required: "Поле 'Email' обязательно к заполнению",
+        email: "Недопустимый формат имени email",
       },
-    });
+      phone: {
+        required: "Поле 'Телефон' обязательно к заполнению",
+      },
+    },
   });
 
   //Строковые переменные для отображения ответа от сервера
@@ -127,7 +125,7 @@ $(document).ready(function () {
   //Функция, которая удаляет div с ответом от сервера через 3 сек
   function removeResponse() {
     setTimeout(function () {
-      $(".response-wrapper").fadeOut(100);
+      $(".response-wrapper").fadeOut(200);
     }, 3000);
   }
 
@@ -142,11 +140,9 @@ $(document).ready(function () {
           // alert(4);
           if (response.status == 200) {
             // alert(200);
-            $(".modal-wrapper").fadeOut(100);
+            $(".modal-wrapper").fadeOut(200);
             $(".response-wrapper").fadeIn(200);
-            $(".response").removeClass("response_fail");
-            $(".response").addClass("response_success");
-            $(".response").html(successResponse);
+            $(".response__title").html(successResponse);
             removeResponse();
             form.trigger("reset");
           }
@@ -158,11 +154,9 @@ $(document).ready(function () {
     response.fail(function () {
       // alert("all bad");
 
-      $(".modal-wrapper").fadeOut(100);
+      $(".modal-wrapper").fadeOut(200);
       $(".response-wrapper").fadeIn(200);
-      $(".response").removeClass("response_success");
-      $(".response").addClass("response_fail");
-      $(".response").html(failResponse);
+      $(".response__title").html(failResponse);
       removeResponse();
       form.trigger("reset");
     });
@@ -170,8 +164,14 @@ $(document).ready(function () {
 
   $(".response-wrapper").on("click", function (event) {
     if ($(event.target).closest(".response").length == 0) {
-      $(".response-wrapper").fadeOut(100);
+      $(".response-wrapper").fadeOut(200);
     }
+  });
+  $(".close-icon").on("click", function () {
+    $(".modal-wrapper").fadeOut(200);
+  });
+  $(".btn_close-response").on("click", function () {
+    $(".response-wrapper").fadeOut(200);
   });
   $("#modal-form").on("submit", function (e) {
     e.preventDefault();
@@ -180,11 +180,11 @@ $(document).ready(function () {
 
   //Modal
   $("button.phone").on("click", function () {
-    $(".modal-wrapper").fadeIn(500);
+    $(".modal-wrapper").fadeIn(200);
   });
   $(".modal-wrapper").on("click", function (event) {
     if ($(event.target).closest("#modal-form").length == 0) {
-      $(this).fadeOut(500);
+      $(this).fadeOut(200);
     }
   });
 });

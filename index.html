@@ -110,7 +110,9 @@
             >
               <img src="img/intro/arrow-down.svg" alt="arrow-down" />
             </a>
-            <button type="button" class="open-shop">Открыть магазин</button>
+            <button type="button" class="btn btn_open-shop">
+              Открыть магазин
+            </button>
           </div>
         </div>
         <div class="row">
@@ -142,29 +144,33 @@
     <!-- Modal start -->
     <div class="modal-wrapper">
       <div class="overlay"></div>
-      <form action="main.php" class="form-book" id="modal-form">
+      <form class="form" id="modal-form" method="post">
+        <button type="button" class="close-icon">
+          <img src="img/modal/close-icon.png" alt="close-icon" />
+        </button>
+        <h3 class="form__title">Заказать обратный звонок</h3>
         <input
           type="text"
-          class="form-book__input"
+          class="form__input"
           placeholder="Name"
           name="name"
           required
         />
         <input
           type="text"
-          class="form-book__input"
+          class="form__input"
           placeholder="Email"
           name="email"
           required
         />
         <input
           type="text"
-          class="form-book__input"
+          class="form__input"
           placeholder="Phone"
           name="phone"
           required
         />
-        <button class="btn select-btn">Заказать звонок</button>
+        <button class="btn btn_order-call">Заказать звонок</button>
       </form>
     </div>
     <!-- Modal end -->
@@ -172,7 +178,10 @@
     <!-- Messages for user start-->
     <div class="response-wrapper">
       <div class="overlay"></div>
-      <div class="response"></div>
+      <div class="response">
+        <h3 class="response__title"></h3>
+        <button class="btn btn_close-response">Закрыть</button>
+      </div>
     </div>
     <!-- Messages for user end -->
     <script src="js/jquery-3.6.0.min.js"></script>
