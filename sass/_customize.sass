@@ -4,14 +4,62 @@ body
     font-family: $RM
     font-size: 55px
     line-height: 110%
+    letter-spacing: 0.02em
+    &_new-collection
+        font-size: 40px
+        margin-bottom: 92px
+    &_features,
+    &_dream
+        font-size: 40px
+        margin-bottom: 92px
 .descr
     font-family: $RR
     font-size: 20px
     line-height: 140%
+    letter-spacing: 0.02em
     &_offer
         margin-top: 45px
         max-width: 385px
         text-align: right
+    &_footer
+        font-size: 15px
+        margin-top: 9px
+    &_rights-reserved
+        font-size: 13px
+        &:not(:last-child)
+            margin-bottom: 6px
+    &_bottom
+        font-size: 13px
+        &:not(:last-child)
+            margin-bottom: 10px
+.subdescr
+    font-family: $RM
+    font-size: 15px
+    line-height: 140%
+    letter-spacing: 0.02em
+    &_price
+        color: #9C9C9C
+        &:nth-child(1)
+            text-decoration: line-through
+            margin-right: 10px
+    &_dream
+        margin-bottom: 20px
+.subtitle
+    font-family: $RM
+    font-size: 20px
+    letter-spacing: 0.02em
+    &_new-collection
+        text-align: center
+        margin-top: 24px
+        margin-bottom: 7px
+    &_feature
+        font-size: 25px
+        line-height: 140%
+        margin-top: 37px
+        margin-bottom: 24px
+    &_dream
+        margin-bottom: 28px
+
 img
     max-width: 100%
     display: block
@@ -23,6 +71,8 @@ button
 input
     border: none
     outline: none
+p
+    margin: 0
 .btn
     background-color: $CTA
     color: #fff
@@ -40,7 +90,8 @@ input
         transition: all 0.5s ease
         &:hover
             background-color:#509498
-    &_close-response
+    &_close-response,
+    &_collection-open-shop
         background-color: #fff
         color: $CTA
         font-size: 17px
@@ -50,4 +101,47 @@ input
         &:hover
             background-color: $CTA
             color: #fff
+    &_collection-open-shop
+        width: 243px
+        margin: 0 auto
+    &_dream
+        background: none
+        color: $CTA
+        margin-top: 28px
+        margin-bottom: 5px
+        transition: all 0.5s ease
+        border-bottom: 1px solid #fff
+        &:hover
+            border-bottom: 1px solid #CEDEDF
+.navigation-intro,
+.navigation-dream
+    height: 4px
+    padding-right: 0
+    padding-left: 0
+    margin-bottom: 0
+.navigation__item
+    width: 30px
+    height: 4px
+    cursor: pointer
+    &:not(:first-child)
+        margin-left: 12px
+.navigation-intro
+    margin-top: 126px
+    .navigation__item
+        background-color: #D1D1D1
+        &_active
+            background-color: #000
+.navigation-dream
+    position: absolute
+    bottom: 208px
+    .navigation__item
+        background: rgba(255, 255, 255, 0.36)
+        &_active
+            background-color: #fff    
+    
+
+    
+        
+            
+        
 
