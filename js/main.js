@@ -87,7 +87,6 @@ $(document).ready(function () {
     let scroll = $(window).scrollTop();
     if (scroll < 156) {
       $(".header").removeClass("header-sticky");
-      //$("#back-top").fadeOut(500);
     } else {
       $(".header").addClass("header-sticky");
     }
@@ -97,10 +96,10 @@ $(document).ready(function () {
 
   $(".phone img").bind({
     mouseenter: function () {
-      $(this).attr("src", "img/header/phone-icon-white.png");
+      $(this).attr("src", "../img/header/phone-icon-white.png");
     },
     mouseleave: function () {
-      $(this).attr("src", "img/header/phone-icon.png");
+      $(this).attr("src", "../img/header/phone-icon.png");
     },
   });
 
@@ -250,7 +249,7 @@ $(document).ready(function () {
       $(this).fadeOut(200);
     }
   });
-  console.log($("header").height());
+
   // Scroll Up
   $(".arrow-down").on("click", function () {
     $("body,html").animate(

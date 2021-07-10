@@ -1,5 +1,7 @@
 body
     overflow-x: hidden
+h1, h2, h3, h4, p
+    margin: 0
 .title
     font-family: $RM
     font-size: 55px
@@ -17,6 +19,7 @@ body
     font-size: 20px
     line-height: 140%
     letter-spacing: 0.02em
+    
     &_offer
         margin-top: 45px
         max-width: 385px
@@ -30,8 +33,11 @@ body
             margin-bottom: 6px
     &_bottom
         font-size: 13px
+        transition: all 1s ease
         &:not(:last-child)
             margin-bottom: 10px
+        &:hover
+            border-bottom: 1px solid #CEDEDF
 .subdescr
     font-family: $RM
     font-size: 15px
@@ -44,6 +50,24 @@ body
             margin-right: 10px
     &_dream
         margin-bottom: 20px
+    &_crumbs
+        font-size: 17px
+        &:last-child
+            color: #909090
+    &_how-much-isShown
+        &-top,
+        &-bottom
+            font-size: 17px
+            color: #808080
+            margin-top: 92px
+            margin-bottom: 65px
+        &-bottom
+            margin-top: 0
+    &_brand
+        &:nth-child(2)
+            margin-bottom: 25px
+    &_contacts
+        margin-bottom: 19px
 .subtitle
     font-family: $RM
     font-size: 20px
@@ -59,6 +83,12 @@ body
         margin-bottom: 24px
     &_dream
         margin-bottom: 28px
+    &_brand
+        font-size: 25px
+        margin-bottom: 46px
+    &_form
+        font-size: 25px
+        margin-bottom: 62px
 
 img
     max-width: 100%
@@ -77,12 +107,17 @@ p
     background-color: $CTA
     color: #fff
     padding: 0
-    &_open-shop
+    &_open-shop,
+    &_brand
         width: 214px
         height: 100%
         transition: all 0.5s ease
         &:hover
             background-color:#509498
+    &_brand
+        width: 260px
+        padding: 22px 50px
+        margin: 0 auto
     &_order-call
         width: 351px
         font-size: 17px
@@ -95,7 +130,7 @@ p
         background-color: #fff
         color: $CTA
         font-size: 17px
-        padding: 22px 50px
+        padding: 22px 49px
         border: 1px solid $CTA
         transition: all 0.5s ease
         &:hover
@@ -113,6 +148,8 @@ p
         border-bottom: 1px solid #fff
         &:hover
             border-bottom: 1px solid #CEDEDF
+    &_pagination-nav
+        font-size: 17px
 .navigation-intro,
 .navigation-dream
     height: 4px
