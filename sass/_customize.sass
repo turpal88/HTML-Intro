@@ -68,6 +68,11 @@ h1, h2, h3, h4, p
             margin-bottom: 25px
     &_contacts
         margin-bottom: 19px
+    &_cart,
+    &_total
+        font-size: 17px
+        margin-bottom: 28px
+        padding-left: 0
 .subtitle
     font-family: $RM
     font-size: 20px
@@ -89,6 +94,8 @@ h1, h2, h3, h4, p
     &_form
         font-size: 25px
         margin-bottom: 62px
+    &_sum
+        line-height: 66px
 
 img
     max-width: 100%
@@ -108,12 +115,16 @@ p
     color: #fff
     padding: 0
     &_open-shop,
-    &_brand
+    &_brand,
+    &_make-order
         width: 214px
         height: 100%
         transition: all 0.5s ease
         &:hover
             background-color:#509498
+    &_make-order
+        width: 236px
+        padding: 22px 49px
     &_brand
         width: 260px
         padding: 22px 50px
@@ -126,7 +137,9 @@ p
         &:hover
             background-color:#509498
     &_close-response,
-    &_collection-open-shop
+    &_collection-open-shop,
+    &_apply-coupon,
+    &_update-cart
         background-color: #fff
         color: $CTA
         font-size: 17px
@@ -136,6 +149,10 @@ p
         &:hover
             background-color: $CTA
             color: #fff
+    &_apply-coupon
+        width: 248px
+    &_update-cart
+        width: 254px
     &_collection-open-shop
         width: 243px
         margin: 0 auto

@@ -4755,6 +4755,12 @@ h1, h2, h3, h4, p {
   margin-bottom: 19px;
 }
 
+.subdescr_cart, .subdescr_total {
+  font-size: 17px;
+  margin-bottom: 28px;
+  padding-left: 0;
+}
+
 .subtitle {
   font-family: "Raleway Medium";
   font-size: 20px;
@@ -4788,6 +4794,10 @@ h1, h2, h3, h4, p {
   margin-bottom: 62px;
 }
 
+.subtitle_sum {
+  line-height: 66px;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -4815,14 +4825,19 @@ p {
   padding: 0;
 }
 
-.btn_open-shop, .btn_brand {
+.btn_open-shop, .btn_brand, .btn_make-order {
   width: 214px;
   height: 100%;
   transition: all 0.5s ease;
 }
 
-.btn_open-shop:hover, .btn_brand:hover {
+.btn_open-shop:hover, .btn_brand:hover, .btn_make-order:hover {
   background-color: #509498;
+}
+
+.btn_make-order {
+  width: 236px;
+  padding: 22px 49px;
 }
 
 .btn_brand {
@@ -4842,7 +4857,7 @@ p {
   background-color: #509498;
 }
 
-.btn_close-response, .btn_collection-open-shop {
+.btn_close-response, .btn_collection-open-shop, .btn_apply-coupon, .btn_update-cart {
   background-color: #fff;
   color: #6E9C9F;
   font-size: 17px;
@@ -4851,9 +4866,17 @@ p {
   transition: all 0.5s ease;
 }
 
-.btn_close-response:hover, .btn_collection-open-shop:hover {
+.btn_close-response:hover, .btn_collection-open-shop:hover, .btn_apply-coupon:hover, .btn_update-cart:hover {
   background-color: #6E9C9F;
   color: #fff;
+}
+
+.btn_apply-coupon {
+  width: 248px;
+}
+
+.btn_update-cart {
+  width: 254px;
 }
 
 .btn_collection-open-shop {
@@ -4991,15 +5014,15 @@ p {
   background-color: #6E9C9F;
 }
 
-.basket {
+.cart {
   background: none;
   position: relative;
 }
 
-.basket__isInStock {
+.cart__isInStock {
   position: absolute;
   top: -10px;
-  right: -3px;
+  right: -8px;
   width: 15px;
   height: 15px;
   border-radius: 100%;
@@ -5007,7 +5030,7 @@ p {
   color: #fff;
   font-family: "Raleway Regular";
   font-size: 9px;
-  padding: 1px 5px 5px 5px;
+  padding: 1px 3px 4px 4px;
 }
 
 .intro {
@@ -5656,4 +5679,60 @@ input:not(:last-child) {
   background-color: #F1EADC;
   display: none;
   padding: 30px 76px;
+}
+
+.cart-table {
+  padding-bottom: 130px;
+  padding-top: 190px;
+}
+
+.cart-table-header {
+  padding-bottom: 26px;
+  padding-top: 214px;
+  border-bottom: 1px solid #CCCCCC;
+}
+
+.cart-table-img {
+  margin-right: 36px;
+}
+
+.cart-table-img img {
+  width: 137px;
+}
+
+.cart-table-amount span {
+  width: 47px;
+  height: 47px;
+  border: 1px solid #AFAFAF;
+  padding: 8px 18px 11px 18px;
+}
+
+.cart-table-content {
+  padding-top: 49px;
+  padding-bottom: 72px;
+}
+
+.close-cart-icon {
+  margin-right: 45px;
+}
+
+.coupons .cart-input {
+  margin-bottom: 0;
+  padding-bottom: 23px;
+  margin-right: 16px;
+}
+
+.coupons {
+  margin-bottom: 88px;
+}
+
+.total-sum {
+  width: 287px;
+  background-color: #F1EADC;
+  padding-left: 31px;
+  margin-right: 15px;
+}
+
+.total-sum span:nth-child(1) {
+  margin-right: 69px;
 }
