@@ -73,6 +73,14 @@ h1, h2, h3, h4, p
         font-size: 17px
         margin-bottom: 28px
         padding-left: 0
+    &_customer-order
+        font-size: 17px
+        margin-bottom: 30px
+        &:last-child
+            margin-bottom: 15px
+    &_checkbox
+        font-size: 17px
+        
 .subtitle
     font-family: $RM
     font-size: 20px
@@ -96,6 +104,16 @@ h1, h2, h3, h4, p
         margin-bottom: 62px
     &_sum
         line-height: 66px
+    &_checkout-form,
+    &_checkout-order
+        font-size: 25px
+        margin-bottom: 47px
+    &_customer-good,
+    &_customer-order-total
+        margin-bottom: 30px
+    &_payment-way
+        font-size: 25px
+        margin-bottom: 47px
 
 img
     max-width: 100%
@@ -105,9 +123,12 @@ button
     outline: none
     background-color: #fff
     cursor: pointer
-input
+input,
+textarea
     border: none
     outline: none
+
+
 p
     margin: 0
 .btn
@@ -116,7 +137,8 @@ p
     padding: 0
     &_open-shop,
     &_brand,
-    &_make-order
+    &_make-order,
+    &_place-order
         width: 214px
         height: 100%
         transition: all 0.5s ease
@@ -124,6 +146,10 @@ p
             background-color:#509498
     &_make-order
         width: 236px
+        padding: 22px 49px
+    &_place-order
+        width: 246px
+        height: auto
         padding: 22px 49px
     &_brand
         width: 260px

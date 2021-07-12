@@ -4761,6 +4761,19 @@ h1, h2, h3, h4, p {
   padding-left: 0;
 }
 
+.subdescr_customer-order {
+  font-size: 17px;
+  margin-bottom: 30px;
+}
+
+.subdescr_customer-order:last-child {
+  margin-bottom: 15px;
+}
+
+.subdescr_checkbox {
+  font-size: 17px;
+}
+
 .subtitle {
   font-family: "Raleway Medium";
   font-size: 20px;
@@ -4798,6 +4811,20 @@ h1, h2, h3, h4, p {
   line-height: 66px;
 }
 
+.subtitle_checkout-form, .subtitle_checkout-order {
+  font-size: 25px;
+  margin-bottom: 47px;
+}
+
+.subtitle_customer-good, .subtitle_customer-order-total {
+  margin-bottom: 30px;
+}
+
+.subtitle_payment-way {
+  font-size: 25px;
+  margin-bottom: 47px;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -4810,7 +4837,8 @@ button {
   cursor: pointer;
 }
 
-input {
+input,
+textarea {
   border: none;
   outline: none;
 }
@@ -4825,18 +4853,24 @@ p {
   padding: 0;
 }
 
-.btn_open-shop, .btn_brand, .btn_make-order {
+.btn_open-shop, .btn_brand, .btn_make-order, .btn_place-order {
   width: 214px;
   height: 100%;
   transition: all 0.5s ease;
 }
 
-.btn_open-shop:hover, .btn_brand:hover, .btn_make-order:hover {
+.btn_open-shop:hover, .btn_brand:hover, .btn_make-order:hover, .btn_place-order:hover {
   background-color: #509498;
 }
 
 .btn_make-order {
   width: 236px;
+  padding: 22px 49px;
+}
+
+.btn_place-order {
+  width: 246px;
+  height: auto;
   padding: 22px 49px;
 }
 
@@ -5617,6 +5651,16 @@ a.tab-active {
   padding-top: 190px;
 }
 
+.contacts input {
+  width: 350px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #000000;
+}
+
+.contacts input:not(:last-child) {
+  margin-bottom: 35px;
+}
+
 .map {
   margin-top: 214px;
   margin-bottom: 190px;
@@ -5626,16 +5670,6 @@ a.tab-active {
 
 .form-contacts {
   margin-top: 130px;
-}
-
-input {
-  width: 350px;
-  padding-bottom: 16px;
-  border-bottom: 1px solid #000000;
-}
-
-input:not(:last-child) {
-  margin-bottom: 35px;
 }
 
 .name[placeholder],
@@ -5735,4 +5769,108 @@ input:not(:last-child) {
 
 .total-sum span:nth-child(1) {
   margin-right: 69px;
+}
+
+.checkout {
+  padding-top: 190px;
+  padding-bottom: 130px;
+}
+
+.checkout .phone {
+  margin-bottom: 81px;
+}
+
+.customer-data,
+.customer-address {
+  margin-top: 214px;
+}
+
+.customer-data-form input,
+.customer-address-form input {
+  width: 100%;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #000000;
+}
+
+.customer-data-form input:not(:last-of-type),
+.customer-address-form input:not(:last-of-type) {
+  margin-bottom: 35px;
+}
+
+.customer-data-form input[placeholder],
+.customer-address-form input[placeholder] {
+  font-family: "Raleway Medium";
+  font-size: 17px;
+  letter-spacing: 0.02em;
+  color: #868686;
+}
+
+.customer-address-form input:last-of-type {
+  margin-bottom: 81px;
+}
+
+.customer-address {
+  margin-top: 0;
+}
+
+.customer-order__total-frame {
+  width: 284px;
+  background-color: #F1EADC;
+  padding: 15px 14px 15px 18px;
+  margin-left: -15px;
+}
+
+.payment-way {
+  margin-top: 77px;
+}
+
+.payment-way-checkbox {
+  position: relative;
+  margin-bottom: 47px;
+}
+
+label[for="cash"] {
+  display: flex;
+}
+
+label[for="cash"]::before {
+  display: block;
+  content: '';
+  width: 22px;
+  height: 22px;
+  border: 1px solid #000000;
+  margin-right: 14px;
+  cursor: pointer;
+}
+
+label[for="cash"]::after {
+  opacity: 0;
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  background-color: #000;
+  left: 6px;
+  top: 6px;
+  transition: opacity 0.5s ease;
+}
+
+#cash {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+  opacity: 0;
+  width: 22px;
+  height: 22px;
+}
+
+#cash:checked + label[for="cash"]::after {
+  opacity: 1;
+}
+
+.message {
+  width: 350px;
+  height: 134px;
 }

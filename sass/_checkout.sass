@@ -1,0 +1,74 @@
+.checkout
+    padding-top: 190px
+    padding-bottom: 130px
+    .phone
+        margin-bottom: 81px
+.customer-data,
+.customer-address
+    margin-top: 214px
+    &-form
+        input
+            width: 100%
+            padding-bottom: 16px
+            border-bottom: 1px solid #000000
+            &:not(:last-of-type)
+                margin-bottom: 35px
+            &[placeholder]
+                font-family: $RM
+                font-size: 17px
+                letter-spacing: 0.02em
+                color: #868686
+.customer-address-form
+    input
+        &:last-of-type
+            margin-bottom: 81px          
+.customer-address
+    margin-top: 0
+.customer-order
+    &__total-frame
+        width: 284px
+        background-color: #F1EADC
+        padding: 15px 14px 15px 18px
+        margin-left: -15px
+.payment-way
+    margin-top: 77px
+    &-checkbox
+        position: relative
+        margin-bottom: 47px
+label[for="cash"]
+    display: flex
+    &::before
+        display: block
+        content: ''
+        width: 22px
+        height: 22px
+        border: 1px solid #000000
+        margin-right: 14px
+        cursor: pointer
+    &::after
+        opacity: 0
+        position: absolute
+        content: ''
+        width: 10px
+        height: 10px
+        cursor: pointer
+        background-color: #000
+        left: 6px
+        top: 6px  
+        transition: opacity 0.5s ease
+#cash
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    z-index: -1
+    opacity: 0
+    width: 22px
+    height: 22px
+    &:checked
+        &+label[for="cash"]::after
+            opacity: 1
+.message
+    width: 350px
+    height: 134px        
+            
+
