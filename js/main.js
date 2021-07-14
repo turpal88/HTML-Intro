@@ -82,6 +82,33 @@ $(document).ready(function () {
     $(".dream-slider").slick("slickGoTo", $(this).index());
   });
 
+  //Lightning header list
+  switch (window.location.pathname) {
+    case "/index.html":
+      $(".header-menu-list__item a").removeClass("header-item-active");
+      $(".header-menu-list__item a").eq(0).addClass("header-item-active");
+      $(".mobile-menu__item a").removeClass("mobile-item-active");
+      $(".mobile-menu__item a").eq(0).addClass("mobile-item-active");
+      break;
+    case "/shop.html":
+      $(".header-menu-list__item a").removeClass("header-item-active");
+      $(".header-menu-list__item a").eq(1).addClass("header-item-active");
+      $(".mobile-menu__item a").removeClass("mobile-item-active");
+      $(".mobile-menu__item a").eq(1).addClass("mobile-item-active");
+      break;
+    case "/about-brand.html":
+      $(".header-menu-list__item a").removeClass("header-item-active");
+      $(".header-menu-list__item a").eq(2).addClass("header-item-active");
+      $(".mobile-menu__item a").removeClass("mobile-item-active");
+      $(".mobile-menu__item a").eq(2).addClass("mobile-item-active");
+      break;
+    case "/contacts.html":
+      $(".header-menu-list__item a").removeClass("header-item-active");
+      $(".header-menu-list__item a").eq(3).addClass("header-item-active");
+      $(".mobile-menu__item a").removeClass("mobile-item-active");
+      $(".mobile-menu__item a").eq(3).addClass("mobile-item-active");
+      break;
+  }
   //Sticky header
   $(window).on("scroll", function () {
     let scroll = $(window).scrollTop();
@@ -240,6 +267,7 @@ $(document).ready(function () {
   });
   $(".slick-next").html("");
   $(".slick-prev").html("");
+
   //Modal
   $("button.phone").on("click", function () {
     $(".modal-wrapper").fadeIn(200);

@@ -2,7 +2,6 @@
     padding-top: 51px
     position: relative
     z-index: 3
-    overflow: hidden
     &-sticky
         padding: 0
         position: fixed
@@ -24,22 +23,29 @@
                     letter-spacing: 0.02em
                     transition: all 0.5s ease
                     &:hover
-                        color: #6E9C9F
+                        color: $CTA
+                    &.header-item-active
+                        font-family: $RB
+                        color: $CTA
                 &:not(:last-child)
                     margin-right: 45px
     
-                
+
+                    
 .logo
     font-family: $RM
     font-size: 16px
     line-height: 19px
     letter-spacing: 0.1em
     text-transform: uppercase
-    
     img
         margin-right: 15px
 .phone
     background: none
+    font-family: $RR
+    font-size: 15px
+    color: #000
+    letter-spacing: 0.02em
     img
         transition: all 0.5s ease
         margin-right: 9px

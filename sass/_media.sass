@@ -1,0 +1,100 @@
+.mobile-menu
+    padding: 40px 20px
+    margin: 0
+    display: flex
+    position: fixed
+    flex-direction: column
+    justify-content: center
+    right: 0
+    z-index: 5
+    top: 0
+    background-color: #fff
+    transform: translateX(100%)
+    transition: all 0.5s ease
+    &__item
+        &:not(:last-child)
+            margin-bottom: 15px
+        a
+            color: #000
+            font-family: $RB
+            font-size: 15px         
+            line-height: 140%
+            letter-spacing: 0.02em
+            transition: all 0.5s ease
+            &:hover
+                color: $CTA
+            &.mobile-item-active
+                color: $CTA
+.x
+    position: absolute
+    width: 20px
+    height: 20px
+    top: 10px
+    right: 20px
+    cursor: pointer
+    text-align: center
+    color: #000
+    
+.slicknav-btn 
+    background-color: $CTA
+    color: #fff
+    font-size: 14px
+    border-radius: 5px
+    outline: none
+    border: none
+    cursor: pointer
+    transition: all 0.5s ease
+    padding-left: 10px
+    padding-right: 10px
+    &:hover
+        background-color:#509498
+
+@media (max-width: 1199.99px)
+    .header,
+    .footer
+        padding-top: 20px
+    .header-sticky
+        padding-top: 20px
+        padding-bottom: 20px
+    .logo
+        img
+            margin-right: 5px
+            margin-left: 10px
+    .bottom-menu-list
+        padding-left: 52px
+@media (max-width: 991.99px)
+    .footer
+        padding-bottom: 20px
+        &-contacts
+            margin-top: 20px
+    .bottom-menu-list
+        margin-top: 20px
+@media (max-width: 575.99px)
+    
+    .logo
+        font-size: 14px
+        margin-bottom: 20px
+    .cart
+        width: 20px
+        height: 25px
+        margin-left: 5px
+    .phone
+        font-size: 14px
+    .slicknav-btn
+        font-size: 12px
+    .mobile-menu
+        &__item
+            a
+                font-size: 14px
+    .footer .phone
+        text-align: center
+    .bottom-menu-list
+        padding-left: 20px
+    .footer-contacts
+        padding-right: 20px
+    .all-rights-reserved
+        margin-top: 20px
+    .bottom-menu-list
+        &__item
+            &:not(:last-child)
+                margin-bottom: 10px
