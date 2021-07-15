@@ -37,7 +37,7 @@
             href="index.html"
             class="
               logo
-              d-flex
+              d-none d-sm-flex
               align-items-center
               col-sm-2 col-12
               justify-content-center
@@ -110,7 +110,16 @@
       <section class="intro">
         <div class="container">
           <div class="row">
-            <div class="offer-wrapper col-xl-6">
+            <div
+              class="
+                offer-wrapper
+                col-12 col-sm-5
+                offset-sm-6
+                col-md-5
+                offset-md-0
+                col-lg-6
+              "
+            >
               <div class="offer-wrapper-item">
                 <h2 class="title title_offer">
                   Новые поступления в этом сезоне
@@ -141,7 +150,17 @@
             </div>
           </div>
           <div class="row">
-            <div class="intro-buttons col-xl-4 offset-xl-1 d-xl-flex">
+            <div
+              class="
+                intro-buttons
+                d-flex
+                col-sm-4
+                offset-sm-6
+                col-md-4
+                offset-md-1
+                col-12
+              "
+            >
               <a
                 href="#"
                 class="
@@ -166,8 +185,18 @@
               </a>
             </div>
           </div>
-          <div class="row">
-            <ul class="navigation-intro col-4 d-flex justify-content-end"></ul>
+          <div class="row justify-content-center justify-content-sm-start">
+            <ul
+              class="
+                navigation-intro
+                col-sm-6
+                offset-sm-5
+                col-md-4
+                offset-md-0
+                d-flex
+                justify-content-sm-end justify-content-center
+              "
+            ></ul>
           </div>
         </div>
         <div class="photo-wrapper">
@@ -502,26 +531,28 @@
         <h3 class="form__title">Заказать обратный звонок</h3>
         <input
           type="text"
-          class="form__input"
+          class="form__input d-block d-sm-inline"
           placeholder="Name"
           name="name"
           required
         />
         <input
           type="text"
-          class="form__input"
+          class="form__input d-block d-sm-inline"
           placeholder="Email"
           name="email"
           required
         />
         <input
           type="text"
-          class="form__input"
+          class="form__input d-block d-sm-inline"
           placeholder="Phone"
           name="phone"
           required
         />
-        <button class="btn btn_order-call">Заказать звонок</button>
+        <button class="btn btn_order-call d-block d-sm-inline">
+          Заказать звонок
+        </button>
       </form>
     </div>
     <!-- Modal end -->

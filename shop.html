@@ -35,12 +35,18 @@
         <div class="row">
           <a
             href="index.html"
-            class="logo d-xl-flex align-items-xl-center col-xl-2"
+            class="
+              logo
+              d-flex
+              align-items-center
+              col-sm-2 col-12
+              justify-content-center
+            "
           >
             <img src="img/logo.png" alt="logo" />Womazing
           </a>
-          <nav class="header-menu col-xl-5 offset-xl-1 d-xl-flex">
-            <ul class="header-menu-list d-xl-flex">
+          <nav class="header-menu d-none col-sm-5 offset-sm-1 d-lg-flex">
+            <ul class="header-menu-list d-none d-lg-flex">
               <li class="header-menu-list__item">
                 <a href="index.html">Главная</a>
               </li>
@@ -58,11 +64,14 @@
           <div
             class="
               header-contacts-basket
-              col-xl-3
-              offset-xl-1
-              d-xl-flex
-              justify-content-xl-between
-              align-items-xl-center
+              col-md-4 col-lg-3
+              offset-md-4 offset-lg-1
+              col-sm-6
+              offset-sm-2
+              col-8
+              d-flex
+              justify-content-sm-between justify-content-start
+              align-items-center
             "
           >
             <button type="button" class="phone d-flex align-items-center">
@@ -76,6 +85,22 @@
               </div>
             </a>
           </div>
+          <!-- Mobile menu button start-->
+
+          <button
+            type="button"
+            class="
+              slicknav-btn
+              d-lg-none
+              col-md-1
+              offset-md-1
+              col-2
+              offset-sm-0 offset-2
+            "
+          >
+            <span class="slicknav-menutxt">МЕНЮ</span>
+          </button>
+          <!-- Mobile menu button end -->
         </div>
       </div>
     </header>
@@ -284,12 +309,18 @@
         <div class="row align-items-start">
           <a
             href="index.html"
-            class="logo d-xl-flex align-items-xl-center col-xl-2"
+            class="
+              logo
+              d-flex
+              align-items-center
+              col-lg-2 col-sm-6 col-12
+              justify-content-center justify-content-sm-start
+            "
           >
             <img src="img/logo.png" alt="logo" />Womazing
           </a>
-          <nav class="footer-menu col-xl-5 offset-xl-1 d-xl-flex">
-            <ul class="footer-menu-list d-xl-flex">
+          <nav class="footer-menu d-none col-lg-5 offset-lg-1 d-lg-flex">
+            <ul class="footer-menu-list d-none d-lg-flex">
               <li class="footer-menu-list__item">
                 <a href="index.html">Главная</a>
               </li>
@@ -304,18 +335,79 @@
               </li>
             </ul>
           </nav>
+
+          <button
+            type="button"
+            class="phone col-lg-3 offset-lg-1 col-sm-6 col-12"
+          >
+            +7 (495) 823-54-12
+          </button>
+        </div>
+        <div class="row">
+          <div
+            class="
+              all-rights-reserved
+              col-md-3 col-sm-12
+              d-flex
+              flex-column
+              justify-content-end
+              align-items-center align-items-md-start
+              order-sm-2 order-md-0 order-2
+              col-12
+            "
+          >
+            <p class="descr descr_rights-reserved">© Все права защищены</p>
+            <p class="descr descr_rights-reserved">
+              Политика конфиденциальности
+            </p>
+            <p class="descr descr_rights-reserved">Публичная оферта</p>
+          </div>
+          <ul
+            class="
+              bottom-menu-list
+              col-md-2
+              offset-md-1
+              col-sm-3
+              offset-sm-3
+              d-flex
+              flex-column
+              justify-content-md-end
+              align-items-sm-start align-items-md-start
+              justify-content-sm-start justify-content-md-end
+              order-sm-1 order-0
+              col-6
+              justify-content-center
+            "
+          >
+            <li class="bottom-menu-list__item">
+              <a class="descr descr_bottom" href="#">Пальто</a>
+            </li>
+            <li class="bottom-menu-list__item">
+              <a class="descr descr_bottom" href="#">Свитшоты</a>
+            </li>
+            <li class="bottom-menu-list__item">
+              <a class="descr descr_bottom" href="#">Кардиганы</a>
+            </li>
+            <li class="bottom-menu-list__item">
+              <a class="descr descr_bottom" href="#">Толстовки</a>
+            </li>
+          </ul>
           <div
             class="
               footer-contacts
-              col-xl-2
-              offset-xl-2
-              d-xl-flex
+              col-md-3
+              offset-md-3
+              d-flex
+              col-sm-6
               flex-column
+              align-items-md-end
+              justify-content-md-between
+              align-items-sm-start
+              order-sm-0 order-md-2 order-1
+              col-6
               align-items-end
-              justify-content-xl-between
             "
           >
-            <button type="button" class="phone">+7 (495) 823-54-12</button>
             <a class="descr descr_footer" href="mailto:hello@womazing.com"
               >hello@womazing.com</a
             >
@@ -335,45 +427,6 @@
             </div>
           </div>
         </div>
-        <div class="row bottom-menu">
-          <div
-            class="
-              all-rights-reserved
-              col-xl-3
-              d-flex
-              flex-column
-              justify-content-end
-            "
-          >
-            <p class="descr descr_rights-reserved">© Все права защищены</p>
-            <p class="descr descr_rights-reserved">
-              Политика конфиденциальности
-            </p>
-            <p class="descr descr_rights-reserved">Публичная оферта</p>
-          </div>
-          <ul class="bottom-menu-list col-xl-2">
-            <li class="bottom-menu-list__item">
-              <a class="descr descr_bottom" href="shop-catalog/coats.html"
-                >Пальто</a
-              >
-            </li>
-            <li class="bottom-menu-list__item">
-              <a class="descr descr_bottom" href="shop-catalog/sweatshirts.html"
-                >Свитшоты</a
-              >
-            </li>
-            <li class="bottom-menu-list__item">
-              <a class="descr descr_bottom" href="shop-catalog/cardigans.html"
-                >Кардиганы</a
-              >
-            </li>
-            <li class="bottom-menu-list__item">
-              <a class="descr descr_bottom" href="shop-catalog/hoodies.html"
-                >Толстовки</a
-              >
-            </li>
-          </ul>
-        </div>
       </div>
     </footer>
     <!-- Footer end -->
@@ -387,26 +440,28 @@
         <h3 class="form__title">Заказать обратный звонок</h3>
         <input
           type="text"
-          class="form__input"
+          class="form__input d-block d-sm-inline"
           placeholder="Name"
           name="name"
           required
         />
         <input
           type="text"
-          class="form__input"
+          class="form__input d-block d-sm-inline"
           placeholder="Email"
           name="email"
           required
         />
         <input
           type="text"
-          class="form__input"
+          class="form__input d-block d-sm-inline"
           placeholder="Phone"
           name="phone"
           required
         />
-        <button class="btn btn_order-call">Заказать звонок</button>
+        <button class="btn btn_order-call d-block d-sm-inline">
+          Заказать звонок
+        </button>
       </form>
     </div>
     <!-- Modal end -->
@@ -420,9 +475,29 @@
       </div>
     </div>
     <!-- Messages for user end -->
+
+    <!-- Mobile menu start -->
+    <ul class="mobile-menu">
+      <div class="x">&#10006;</div>
+
+      <li class="mobile-menu__item">
+        <a href="index.html">Главная</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="shop.html">Магазин</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="about-brand.html">О бренде</a>
+      </li>
+      <li class="mobile-menu__item">
+        <a href="contacts.html">Контакты</a>
+      </li>
+    </ul>
+    <!-- Mobile-menu end -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/jquery.validate.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/adaptive.js"></script>
   </body>
 </html>

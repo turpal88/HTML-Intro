@@ -5329,7 +5329,7 @@ p {
 
 .form {
   width: 491px;
-  background-color: #fff;
+  background-color: white;
   text-align: center;
   padding-bottom: 70px;
   position: relative;
@@ -5970,6 +5970,32 @@ label[for="cash"]::after {
   background-color: #509498;
 }
 
+@media (min-width: 1400px) {
+  .photo-wrapper__second-photo,
+  .photo-wrapper__third-photo {
+    display: block;
+  }
+}
+
+@media (max-width: 1399.99px) {
+  .photo-wrapper__second-photo,
+  .photo-wrapper__third-photo {
+    display: none;
+  }
+}
+
+@media (max-width: 1400px) {
+  .title_offer {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 1399.99px) {
+  .photo-wrapper {
+    width: 605px;
+  }
+}
+
 @media (max-width: 1199.99px) {
   .header,
   .footer {
@@ -5986,6 +6012,28 @@ label[for="cash"]::after {
   .bottom-menu-list {
     padding-left: 52px;
   }
+  .photo-wrapper {
+    width: 505px;
+  }
+  .photo-wrapper__main-photo {
+    width: 310px;
+    margin-right: 0;
+  }
+  .title_offer {
+    font-size: 35px;
+    text-align: right;
+  }
+  .descr_offer {
+    font-size: 16px;
+    max-width: 100%;
+  }
+  .navigation-intro {
+    margin-top: 60px;
+  }
+  .header-sticky .header-menu-list {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 991.99px) {
@@ -5997,6 +6045,91 @@ label[for="cash"]::after {
   }
   .bottom-menu-list {
     margin-top: 20px;
+  }
+  .photo-wrapper {
+    width: 405px;
+  }
+  .photo-wrapper__main-photo {
+    width: 260px;
+    margin-right: 0;
+  }
+  .title_offer {
+    font-size: 25px;
+    text-align: right;
+  }
+  .descr_offer {
+    font-size: 14px;
+    max-width: 100%;
+  }
+  .navigation-intro {
+    margin-top: 60px;
+  }
+  .intro {
+    padding-top: 90px;
+  }
+  .intro-buttons {
+    width: 260px;
+    height: 47px;
+  }
+}
+
+@media (max-width: 767.99px) {
+  .form {
+    width: 400px;
+    padding-bottom: 30px;
+  }
+  .form__title {
+    font-size: 21px;
+  }
+  .form__input {
+    width: 259px;
+  }
+  .response__title {
+    font-size: 21px;
+  }
+  .btn_order-call {
+    width: 259px;
+    margin-top: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .btn_close-response {
+    width: 259px;
+  }
+  .response {
+    width: 400px;
+    padding-bottom: 30px;
+  }
+  .photo-wrapper {
+    width: 805px;
+    left: 0;
+  }
+  .photo-wrapper__main-photo {
+    margin-left: 10px;
+  }
+  .offer-wrapper {
+    z-index: 1;
+  }
+  .offer-wrapper__main-photo {
+    width: 170px;
+    margin-left: 210px;
+  }
+  .title_offer {
+    font-size: 20px;
+  }
+  .descr_offer {
+    font-size: 12px;
+  }
+  .btn_open-shop {
+    font-size: 14px;
+  }
+  .navigation-intro {
+    margin-top: 25px;
+    z-index: 1;
+  }
+  .intro-buttons {
+    margin-top: 20px;
+    z-index: 1;
   }
 }
 
@@ -6033,5 +6166,81 @@ label[for="cash"]::after {
   }
   .bottom-menu-list__item:not(:last-child) {
     margin-bottom: 10px;
+  }
+  .form {
+    width: 250px;
+  }
+  .form__title {
+    font-size: 16px;
+  }
+  .form__input {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .form__input[placeholder] {
+    font-size: 13px;
+  }
+  .response__title {
+    font-size: 14px;
+  }
+  .btn_order-call {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .btn_close-response {
+    width: 200px;
+  }
+  .response {
+    width: 250px;
+  }
+  #name-error,
+  #email-error,
+  #phone-error {
+    font-size: 11px;
+  }
+  #name-error {
+    top: 165px;
+  }
+  #email-error {
+    top: 240px;
+  }
+  #phone-error {
+    top: 316px;
+  }
+  .intro-buttons {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .photo-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 620px;
+  }
+  .photo-wrapper__main-photo {
+    width: 170px;
+    margin-top: 80px;
+    margin-left: 0;
+  }
+  .offer-wrapper {
+    margin-top: 360px;
+  }
+  .title_offer,
+  .descr_offer {
+    text-align: center;
+  }
+  .descr_offer {
+    margin-top: 15px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .intro {
+    padding-top: 0;
   }
 }
