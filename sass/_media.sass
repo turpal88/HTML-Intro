@@ -59,6 +59,7 @@
 @media (max-width: 1400px)
     .title_offer
         font-size: 40px
+    
 @media (max-width: 1399.99px)
     .photo-wrapper
         width: 605px    
@@ -88,9 +89,37 @@
         max-width: 100%
     .navigation-intro
         margin-top: 60px
+        margin-bottom: 40px
     .header-sticky .header-menu-list
         margin-top: 10px
         margin-bottom: 10px
+    .dream-slider,
+    .dream-content
+        margin-left: 50px
+    //shop
+    .goods-tabs
+        padding-top: 150px
+        &__item
+            width: 153px
+            text-align: center
+            a
+                padding: 10px 30px
+    .map
+        width: 95%
+        height: 300px
+        margin-left: auto
+        margin-right: auto
+        margin-bottom: 80px
+    .btn_apply-coupon,
+    .btn_update-cart,
+    .cart-input
+        font-size: 14px
+    .add
+        padding-left: 22px
+        padding-right: 22px
+    .btn_successed
+        padding-left: 22px
+        padding-right: 22px
 @media (max-width: 991.99px)
     .footer
         padding-bottom: 20px
@@ -118,7 +147,60 @@
         &-buttons
             width: 260px
             height: 47px
-    
+    .collection-wrapper-item
+        &__img
+            width: 250px
+    .features-wrapper
+        &-item
+            max-width: 100%
+            text-align: center
+            
+            &__icon
+                margin: 0 auto
+            &:not(:last-child)
+                margin-right: 0
+                margin-bottom: 30px
+    .about-brand-content
+        padding-top: 150px
+        
+    .dream-content
+        margin-top: 30px
+    .dream-team
+        padding-bottom: 90px
+    .navigation-dream
+        display: none
+    //shop
+    .goods-tabs
+        &__item
+            width: 120px
+            text-align: center
+            a
+                padding: 10px 15px
+    .subtitle_brand
+        font-size: 20px
+        margin-bottom: 20px
+    .subdescr_brand
+        font-size: 12px
+    .subtitle_contacts
+        font-size: 14px
+    .btn_apply-coupon,
+    .btn_update-cart
+        padding-left: 22px
+        padding-right: 22px
+    .total-sum
+        span
+            &:nth-child(1)
+                margin-right: 10px
+    .item-descr
+        &__options
+            margin-left: auto
+            margin-right: auto
+            text-align: center
+            margin-top: 50px
+        &__img
+            width: 70%
+    .btn_successed
+        margin-top: 30px      
 @media (max-width: 767.99px)
     .form
         width: 400px
@@ -127,6 +209,11 @@
             font-size: 21px
         &__input
             width: 259px
+        &-contacts
+            input
+                width: 100%
+    #message
+        width: 100%
     .response__title
         font-size: 21px
     .btn
@@ -157,6 +244,11 @@
     .btn
         &_open-shop
             font-size: 14px
+        &_apply-coupon
+            margin-top: 20px
+            margin-bottom: 20px
+        &_make-order
+            margin-top: 20px
     .navigation-intro
         margin-top: 25px
         z-index: 1
@@ -164,6 +256,122 @@
         &-buttons
             margin-top: 20px
             z-index: 1
+    .new-collection
+        padding-top: 120px
+    .dream-slider,
+    .dream-content
+        margin-left: auto
+        margin-right: auto
+    .shop-navigation,
+    .about-brand,
+    .contacts
+        margin-top: 120px
+        padding-bottom: 50px
+        &-content
+            padding-top: 80px
+            padding-bottom: 50px
+            &-item
+                &:nth-child(2)
+                    margin-top: 80px
+                &__descr
+                    margin-left: 0
+                    margin-right: 0
+    .contacts
+        padding-top: 0
+        &-phone,
+        &-email,
+        &-address
+            text-align: center
+    .ideas
+        margin-top: 20px
+        width: 450px
+    .magic
+        margin-top: 20px
+        width: 450px        
+    //shop
+    .goods-tabs
+        padding-top: 80px
+        &__item
+            width: 95px
+            text-align: center
+            a
+                padding: 10px 11px
+                font-size: 14px
+    .subdescr_how-much-isShown-top,
+    .subdescr_how-much-isShown-bottom
+        font-size: 14px
+    .map
+        margin-top: 80px
+    .subtitle_contacts
+        font-size: 12px
+    .cart-table
+        padding-top: 120px
+        padding-bottom: 50px
+        //position: relative
+        &-header
+            border-bottom: none
+            padding-bottom: 0
+            padding-top: 55px
+            // position: absolute
+            // top: 24%
+            // left: 20%
+            //margin-top: 125px
+            //width: 100%
+        &-content
+            // width: 60%
+            // position: absolute
+            // top: 18%
+            // right: 0
+            padding-top: 0
+        &-price
+            .subdescr_cart
+                margin-top: 75px
+                margin-bottom: 80px
+        &-amount
+            .descr_cart
+                margin-bottom: 80px
+    .subdescr__good
+        margin-bottom: 145px
+    .subdescr__cart-table-price
+        margin-bottom: 92px
+        text-align-last: left
+    .subdescr__amount
+        margin-bottom: 92px
+    .subdescr_cart
+        font-size: 15px
+            
+        &-descr
+            margin-bottom: 80px
+        &-price
+            margin-bottom: 80px
+        &-amount
+            margin-bottom: 80px
+    .cart-input
+        margin-top: 40px 
+
+    .subdescr_cart
+        margin-bottom: 0
+    .cart-wrapper
+        padding-top: 60px
+    .coupons,
+    .total
+        margin-left: auto
+        margin-right: auto
+    .checkout
+        padding-top: 120px
+    .title_cart
+        font-size: 40px
+    .customer-data
+        margin-top: 80px
+        &-form
+            margin-top: 81px
+    .title_shop
+        font-size: 40px
+    .success
+        padding-top: 120px
+    .order-is-made
+        padding-top: 120px
+        padding-bottom: 120px
 @media (max-width: 575.99px)
     .logo
         font-size: 14px
@@ -196,12 +404,23 @@
         width: 250px
         &__title
             font-size: 16px
+            margin-top: 15px
+            margin-bottom: 20px
         &__input
             width: 200px
             margin-left: auto
             margin-right: auto
+            &:not(:last-child)
+                margin-bottom: 25px
             &[placeholder]
                 font-size: 13px
+        &-contacts
+            margin-left: auto
+            margin-right: auto
+            margin-top: 50px
+            input
+                &[placeholder]
+                    font-size: 13px
     .response__title
         font-size: 14px
     .btn
@@ -213,6 +432,11 @@
             padding-right: 20px
         &_close-response
             width: 200px
+        &_make-order
+            margin-left: auto
+            margin-right: auto
+    .close-icon
+        margin-top: 15px
     .response
         width: 250px
     #name-error,
@@ -226,6 +450,8 @@
     #phone-error
         top: 316px
     .intro
+        padding-top: 0
+        padding-bottom: 50px
         &-buttons
             margin-top: 20px
             margin-left: auto
@@ -244,12 +470,137 @@
     .title_offer,
     .descr_offer
         text-align: center
-        
+    .map
+        margin-bottom: 50px  
     .descr_offer
         margin-top: 15px
         width: 300px
         margin-left: auto
         margin-right: auto
-    .intro
+  
+        
+    .new-collection
         padding-top: 0
-            
+    .collection-wrapper-item
+        &__img
+            width: 280px
+    .title_new-collection
+        font-size: 20px
+        margin-bottom: 50px
+    .subtitle_new-collection,
+    .subtitle_feature,
+    .subtitle_dream,
+    .subtitle_brand
+        font-size: 16px
+    .subdescr_feature,
+    .subdescr_dream,
+        font-size: 12px
+    .title_features,
+    .title_dream
+        font-size: 20px
+        margin-bottom: 60px
+    .dream-slider
+        .slick-prev,
+        .slick-next
+            display: none
+    .features,
+    .new-collection
+        padding-bottom: 60px
+    .btn_dream
+        font-size: 14px
+    //shop-navigation
+    //about-brand
+    .shop-navigation,
+    .about-brand
+        margin-top: 50px
+        padding-bottom: 50px
+        &-content
+            padding-top: 50px
+            &-item
+                &__img
+                    width: 95%
+    .ideas,
+    .magic
+        width: 100%
+    .title_shop
+        font-size: 40px
+    .subdescr_crumbs
+        font-size: 14px
+    //shop
+    .goods-tabs
+        &__item
+            width: 90px
+            text-align: center
+            margin-bottom: 15px
+            &:not(:last-child)
+                margin-right: 15px
+            a
+                padding: 5px 5px
+                font-size: 14px
+    .subdescr_how-much-isShown-top
+        margin-top: 77px
+    .subdescr_how-much-isShown-bottom
+        margin-bottom: 20px
+    .pagination-nav
+        width: 36px
+        height: 36px
+        text-align: center
+        
+        a
+            font-size: 14px
+            padding: 0
+            line-height: 36px    
+    .contacts-phone,
+    .contacts-email
+        margin-bottom: 20px
+    .subdescr_contacts
+        margin-bottom: 10px
+    #message[placeholder]
+        font-size: 13px
+    .subtitle_form
+        text-align: center
+    .cart-table
+        &-header
+            padding-top: 65px
+        &-descr
+            position: absolute
+            width: 320px
+            left: 50%
+            transform: translateX(-50%)
+            .subdescr_cart
+                position: absolute
+                left: 107px
+                top: 100%
+        &-img
+            position: relative        
+        &-price
+            .subdescr_cart
+                margin-top: 230px
+                margin-bottom: 80px
+        &-amount
+            .descr_cart
+                margin-bottom: 80px
+    .total-sum
+        margin-left: auto
+        margin-right: auto
+        text-align: center
+    .cart-input
+        text-align: center
+    .cart-wrapper
+        position: relative
+        
+    .close-cart-icon
+        margin-right: 10px
+    .subdescr__good
+        visibility: hidden
+    .bounded-goods__title
+        font-size: 28px
+    .bounded-goods
+        padding-bottom: 50px
+    .btn_successed
+        padding-left: 16px
+        padding-right: 16px
+    .subtitle_successed
+        font-size: 16px
+    .subdescr_successed
+        font-size: 14px

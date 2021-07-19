@@ -37,7 +37,7 @@
             href="index.html"
             class="
               logo
-              d-flex
+              d-none d-sm-flex
               align-items-center
               col-sm-2 col-12
               justify-content-center
@@ -111,7 +111,14 @@
           <div class="row">
             <div class="crumbs col-12">
               <h1 class="title title_cart">Заказ получен</h1>
-              <div class="crumbs-content d-flex align-items-center">
+              <div
+                class="
+                  crumbs-content
+                  d-flex
+                  align-items-center
+                  flex-sm-nowrap flex-wrap
+                "
+              >
                 <span class="subdescr subdescr_crumbs">Главная</span>
                 <span class="line"></span>
                 <span class="subdescr subdescr_crumbs">Оформление заказа</span>
@@ -121,7 +128,15 @@
             </div>
           </div>
           <div class="row order-is-made align-items-start">
-            <div class="successed-wrapper col-xl-6 d-flex align-items-center">
+            <div
+              class="
+                successed-wrapper
+                col-md-12 col-lg-6
+                d-flex
+                align-items-center
+                justify-content-center justify-content-lg-start
+              "
+            >
               <div class="successed-icon">
                 <img
                   src="img/success/successed-icon.png"
@@ -137,7 +152,17 @@
                 </p>
               </div>
             </div>
-            <a href="index.html" class="btn btn_successed col-xl-3 offset-xl-3"
+            <a
+              href="index.html"
+              class="
+                btn btn_successed
+                col-lg-3
+                offset-lg-3
+                col-sm-6
+                offset-sm-3
+                col-8
+                offset-2
+              "
               >Перейти на главную</a
             >
           </div>

@@ -37,7 +37,7 @@
             href="index.html"
             class="
               logo
-              d-flex
+              d-none d-sm-flex
               align-items-center
               col-sm-2 col-12
               justify-content-center
@@ -118,64 +118,160 @@
               </div>
             </div>
           </div>
-
-          <div class="row cart-table-header">
-            <h4 class="subdescr subdescr__good col-xl-5">Товар</h4>
-            <h4 class="subdescr subdescr__cart-table-price col-xl-2">Цена</h4>
-            <h4 class="subdescr subdescr__amount col-xl-3">Количество</h4>
-            <h4 class="subdescr subdescr__all col-xl-2">Всего</h4>
-          </div>
-          <div class="row cart-table-content">
-            <div class="cart-table-descr col-xl-5 d-xl-flex align-items-center">
-              <button type="button" class="close-cart-icon">
-                <img src="img/modal/close-icon.png" alt="close-icon" />
-              </button>
-              <div class="cart-table-img">
-                <img
-                  src="img/new-collection/brooke-cagle-h3vR1F8-caI-unsplash 1.png"
-                  alt="brooke-cagle"
-                />
+          <div class="row cart-wrapper">
+            <div class="col-md-12 col-sm-3 col-6">
+              <div
+                class="
+                  row
+                  cart-table-header
+                  flex-md-row flex-column
+                  align-items-start
+                "
+              >
+                <h4 class="subdescr subdescr__good col-sm-12 col-md-5">
+                  Товар
+                </h4>
+                <h4
+                  class="
+                    subdescr subdescr__cart-table-price
+                    col-3 col-sm-12 col-md-2
+                  "
+                >
+                  Цена
+                </h4>
+                <h4 class="subdescr subdescr__amount col-md-3 col-sm-12 col-5">
+                  Количество
+                </h4>
+                <h4 class="subdescr subdescr__all col-md-2 col-sm-12 col-3">
+                  Всего
+                </h4>
               </div>
-              <p class="subdescr subdescr_cart">Футболка USA</p>
-            </div>
-            <div class="cart-table-price col-xl-2 d-xl-flex align-items-center">
-              <span class="subdescr subdescr_cart">$129</span>
             </div>
             <div
-              class="cart-table-amount col-xl-3 d-xl-flex align-items-center"
+              class="col-md-12 col-sm-7 col-6 offset-0 offset-sm-2 offset-md-0"
             >
-              <span class="descr descr_cart">1</span>
+              <div
+                class="
+                  row
+                  cart-table-content
+                  flex-md-row flex-column
+                  align-items-sm-start align-items-end align-items-md-center
+                "
+              >
+                <div
+                  class="
+                    cart-table-descr
+                    col-md-5 col-12
+                    d-flex
+                    align-items-center
+                    justify-content-sm-start justify-content-center
+                  "
+                >
+                  <button type="button" class="close-cart-icon">
+                    <img src="img/modal/close-icon.png" alt="close-icon" />
+                  </button>
+                  <div class="cart-table-img">
+                    <img
+                      src="img/new-collection/brooke-cagle-h3vR1F8-caI-unsplash 1.png"
+                      alt="brooke-cagle"
+                    />
+                  </div>
+                  <p class="subdescr subdescr_cart">Футболка USA</p>
+                </div>
+                <div
+                  class="
+                    cart-table-price
+                    col-md-2 col-sm-10 col-7
+                    d-flex
+                    align-items-center
+                    justify-content-sm-center justify-content-end
+                  "
+                >
+                  <span class="subdescr subdescr_cart">$129</span>
+                </div>
+                <div
+                  class="
+                    cart-table-amount
+                    col-md-3 col-sm-10 col-7
+                    d-flex
+                    align-items-center
+                    justify-content-sm-center
+                    justify-content-md-start
+                    justify-content-end
+                  "
+                >
+                  <span class="descr descr_cart">1</span>
+                </div>
+                <div
+                  class="
+                    cart-table-all
+                    col-md-2 col-sm-10 col-7
+                    d-flex
+                    align-items-center
+                    justify-content-sm-center
+                    justify-content-md-start
+                    justify-content-end
+                  "
+                >
+                  <span class="subdescr subdescr_cart">$129</span>
+                </div>
+              </div>
             </div>
-            <div class="cart-table-all col-xl-2 d-xl-flex align-items-center">
-              <span class="subdescr subdescr_cart">$129</span>
-            </div>
-          </div>
-          <div class="row coupons d-xl-flex align-items-end">
-            <input
-              type="text"
-              name="coupon"
-              placeholder="Введите купон"
-              class="cart-input col-xl-3"
-            />
-            <button type="button" class="btn btn_apply-coupon col-xl-3">
-              Применить купон
-            </button>
-            <button
-              type="button"
-              class="btn btn_update-cart col-xl-3 offset-xl-3"
+            <div
+              class="row coupons d-flex align-items-end justify-content-center"
             >
-              Обновить корзину
-            </button>
-          </div>
-          <div class="row total col-xl-6 offset-xl-6">
-            <p class="subdescr subdescr_total">Подытог: <span>$129</span></p>
-            <div class="total-sum">
-              <span class="subtitle subtitle_sum">Итого:</span>
-              <span class="subtitle subtitle_sum">$129</span>
+              <input
+                type="text"
+                name="coupon"
+                placeholder="Введите купон"
+                class="cart-input col-md-3 col-sm-3 col-9"
+              />
+              <button
+                type="button"
+                class="btn btn_apply-coupon col-md-3 col-sm-12 col-9"
+              >
+                Применить купон
+              </button>
+              <button
+                type="button"
+                class="btn btn_update-cart col-md-3 offset-md-2 col-sm-12 col-9"
+              >
+                Обновить корзину
+              </button>
             </div>
-            <button type="button" class="btn btn_make-order">
-              Оформить заказ
-            </button>
+            <div class="row total">
+              <p
+                class="
+                  subdescr subdescr_total
+                  col-12
+                  d-sm-block d-flex
+                  justify-content-center
+                  offset-md-5
+                  col-lg-6
+                  offset-xl-6 offset-lg-6
+                "
+              >
+                Подытог: <span>$129</span>
+              </p>
+              <div
+                class="
+                  total-sum
+                  offset-xl-6
+                  col-lg-3 col-md-3
+                  offset-md-5 offset-lg-6
+                  col-sm-12 col-9
+                "
+              >
+                <span class="subtitle subtitle_sum">Итого:</span>
+                <span class="subtitle subtitle_sum">$129</span>
+              </div>
+              <button
+                type="button"
+                class="btn btn_make-order col-lg-2 col-md-3 col-sm-12 col-9"
+              >
+                Оформить заказ
+              </button>
+            </div>
           </div>
         </div>
       </section>

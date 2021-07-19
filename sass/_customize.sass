@@ -72,8 +72,9 @@ h1, h2, h3, h4, p
     &_cart,
     &_total
         font-size: 17px
-        margin-bottom: 28px
         padding-left: 0
+    &_total
+        margin-bottom: 28px
     &_customer-order
         font-size: 17px
         margin-bottom: 30px
@@ -83,7 +84,8 @@ h1, h2, h3, h4, p
         font-size: 17px
     &_successed
         font-size: 17px
-        
+    &__cart-table-price
+        text-align: center    
 .subtitle
     font-family: $RM
     font-size: 20px
@@ -145,14 +147,15 @@ p
     &_brand,
     &_make-order,
     &_place-order
-        width: 214px
+        //width: 214px
         height: 100%
         transition: all 0.5s ease
         &:hover
             background-color:#509498
     &_make-order
-        width: 236px
-        padding: 22px 49px
+        //width: 236px
+        height: auto
+        padding: 22px 16px
     &_place-order
         width: 246px
         height: auto
@@ -168,6 +171,9 @@ p
         transition: all 0.5s ease
         &:hover
             background-color:#509498
+    &_open-shop
+        padding-left: 16px
+        padding-right: 16px
     &_close-response,
     &_collection-open-shop,
     &_apply-coupon,
@@ -182,10 +188,12 @@ p
         &:hover
             background-color: $CTA
             color: #fff
+    &_successed
+        text-align: center
     &_apply-coupon
-        width: 248px
+        //width: 248px
     &_update-cart
-        width: 254px
+        //width: 254px
     &_collection-open-shop
         width: 243px
         margin: 0 auto

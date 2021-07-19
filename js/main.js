@@ -10,7 +10,16 @@ $(document).ready(function () {
   });
   $(".dream-slider").slick({
     dots: false,
+    responsive: [
+      {
+        breakpoint: 576,
+        settings: {
+          arrows: false,
+        },
+      },
+    ],
   });
+
   let tempArr1 = [];
   let temp1;
   let tempArr2 = [];
@@ -112,7 +121,7 @@ $(document).ready(function () {
   //Sticky header
   $(window).on("scroll", function () {
     let scroll = $(window).scrollTop();
-    if (scroll < 156) {
+    if (scroll < 50) {
       $(".header").removeClass("header-sticky");
     } else {
       $(".header").addClass("header-sticky");
@@ -265,8 +274,6 @@ $(document).ready(function () {
     e.preventDefault();
     feedbackForm($("#modal-form"));
   });
-  $(".slick-next").html("");
-  $(".slick-prev").html("");
 
   //Modal
   $("button.phone").on("click", function () {

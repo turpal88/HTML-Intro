@@ -37,7 +37,7 @@
             href="index.html"
             class="
               logo
-              d-flex
+              d-none d-sm-flex
               align-items-center
               col-sm-2 col-12
               justify-content-center
@@ -112,7 +112,14 @@
           <div class="row">
             <div class="crumbs col-12">
               <h1 class="title title_shop">Свитшот Sweet Shot</h1>
-              <div class="crumbs-content d-flex align-items-center">
+              <div
+                class="
+                  crumbs-content
+                  d-flex
+                  align-items-center
+                  flex-sm-nowrap flex-wrap
+                "
+              >
                 <span class="subdescr subdescr_crumbs">Главная</span>
                 <span class="line"></span>
                 <span class="subdescr subdescr_crumbs">Главная</span>
@@ -122,7 +129,14 @@
             </div>
           </div>
           <div class="row">
-            <div class="item-descr d-xl-flex align-items-center">
+            <div
+              class="
+                item-descr
+                d-flex
+                flex-lg-row flex-column
+                align-items-center
+              "
+            >
               <div class="item-descr__img">
                 <img
                   src="img/new-collection/ben-eaton-L_kaTYIuu1o-unsplash 1.png"
@@ -175,8 +189,8 @@
           <div class="row">
             <div class="bounded-goods">
               <h2 class="bounded-goods__title">Связанные товары</h2>
-              <div class="bounded-goods-images d-flex">
-                <div class="bounded-goods-images__item">
+              <div class="bounded-goods-images d-flex justify-content-between">
+                <a href="#" class="bounded-goods-images__item">
                   <div class="bounded-goods-img">
                     <img
                       src="img/new-collection/brooke-cagle-h3vR1F8-caI-unsplash 1.png"
@@ -188,8 +202,8 @@
                     <span class="subdescr subdescr_price">$229</span>
                     <span class="subdescr subdescr_price">$129</span>
                   </div>
-                </div>
-                <div class="bounded-goods-images__item">
+                </a>
+                <a href="#" class="bounded-goods-images__item">
                   <div class="bounded-goods-img">
                     <img
                       src="img/new-collection/christopher-campbell-va0YmkIFtPA-unsplash 1.png"
@@ -203,7 +217,7 @@
                     <span class="subdescr subdescr_price">$229</span>
                     <span class="subdescr subdescr_price">$129</span>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>

@@ -37,7 +37,7 @@
             href="index.html"
             class="
               logo
-              d-flex
+              d-none d-sm-flex
               align-items-center
               col-sm-2 col-12
               justify-content-center
@@ -121,7 +121,13 @@
           <div class="row">
             <div class="about-brand-content">
               <div
-                class="about-brand-content-item d-xl-flex align-items-center"
+                class="
+                  about-brand-content-item about-brand-content-item
+                  d-flex
+                  flex-column flex-md-row
+                  justify-content-between justify-content-md-start
+                  align-items-center
+                "
               >
                 <div class="about-brand-content-item__img">
                   <img
@@ -147,9 +153,21 @@
                 </div>
               </div>
               <div
-                class="about-brand-content-item d-xl-flex align-items-center"
+                class="
+                  about-brand-content-item
+                  d-flex
+                  flex-column flex-md-row
+                  justify-content-between justify-content-md-start
+                  align-items-center
+                "
               >
-                <div class="about-brand-content-item__descr magic">
+                <div
+                  class="
+                    about-brand-content-item__descr
+                    magic
+                    order-1 order-md-0
+                  "
+                >
                   <h3 class="subtitle subtitle_brand">Магия в деталях</h3>
                   <p class="subdescr subdescr_brand">
                     Первый магазин Womazing был открыт в маленьком городке на
@@ -168,7 +186,7 @@
                     prêt-a-porter попросту не существовало.
                   </p>
                 </div>
-                <div class="about-brand-content-item__img">
+                <div class="about-brand-content-item__img order-0 order-md-1">
                   <img
                     src="img/about-brand/gbarkz-vqKnuG8GaQc-unsplash 1.png"
                     alt="gbarkz-vqKnuG8GaQc"
